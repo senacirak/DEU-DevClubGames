@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		D89F46EF2E82A0E5007E66CC /*  DevClubGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = " DevClubGames.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D89F46EF2E82A0E5007E66CC /* DevClubGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DevClubGames.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -40,7 +40,7 @@
 		D89F46F02E82A0E5007E66CC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D89F46EF2E82A0E5007E66CC /*  DevClubGames.app */,
+				D89F46EF2E82A0E5007E66CC /* DevClubGames.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +48,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D89F46EE2E82A0E5007E66CC /*  DevClubGames */ = {
+		D89F46EE2E82A0E5007E66CC /* DevClubGames */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D89F46FA2E82A0E7007E66CC /* Build configuration list for PBXNativeTarget " DevClubGames" */;
+			buildConfigurationList = D89F46FA2E82A0E7007E66CC /* Build configuration list for PBXNativeTarget "DevClubGames" */;
 			buildPhases = (
 				D89F46EB2E82A0E5007E66CC /* Sources */,
 				D89F46EC2E82A0E5007E66CC /* Frameworks */,
@@ -63,11 +63,11 @@
 			fileSystemSynchronizedGroups = (
 				D89F46F12E82A0E5007E66CC /*  DevClubGames */,
 			);
-			name = " DevClubGames";
+			name = "DevClubGames";
 			packageProductDependencies = (
 			);
 			productName = "GDG DEU Games";
-			productReference = D89F46EF2E82A0E5007E66CC /*  DevClubGames.app */;
+			productReference = D89F46EF2E82A0E5007E66CC /* DevClubGames.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +99,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D89F46EE2E82A0E5007E66CC /*  DevClubGames */,
+				D89F46EE2E82A0E5007E66CC /* DevClubGames */,
 			);
 		};
 /* End PBXProject section */
@@ -324,7 +324,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D89F46FA2E82A0E7007E66CC /* Build configuration list for PBXNativeTarget " DevClubGames" */ = {
+		D89F46FA2E82A0E7007E66CC /* Build configuration list for PBXNativeTarget "DevClubGames" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D89F46FB2E82A0E7007E66CC /* Debug */,

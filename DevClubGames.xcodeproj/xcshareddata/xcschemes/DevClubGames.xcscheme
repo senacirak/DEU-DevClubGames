@@ -16,8 +16,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D89F46EE2E82A0E5007E66CC"
-               BuildableName = " DevClubGames.app"
-               BlueprintName = " DevClubGames"
+               BuildableName = "DevClubGames.app"
+               BlueprintName = "DevClubGames"
                ReferencedContainer = "container:DevClubGames.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D89F46EE2E82A0E5007E66CC"
-            BuildableName = " DevClubGames.app"
-            BlueprintName = " DevClubGames"
+            BuildableName = "DevClubGames.app"
+            BlueprintName = "DevClubGames"
             ReferencedContainer = "container:DevClubGames.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D89F46EE2E82A0E5007E66CC"
-            BuildableName = " DevClubGames.app"
-            BlueprintName = " DevClubGames"
+            BuildableName = "DevClubGames.app"
+            BlueprintName = "DevClubGames"
             ReferencedContainer = "container:DevClubGames.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
