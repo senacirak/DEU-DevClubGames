@@ -33,17 +33,17 @@ extension Game {
              isAvailable: true,
              gradient: ["#4285F4", "#34A853"]),  // DevClub Blue to Green
         
-        Game(name: "Emoji Challenge", 
-             icon: "😀", 
-             description: "Emojilerle ipucu ver, diğerleri tahmin etsin!", 
-             isAvailable: true,
-             gradient: ["#EA4335", "#FBBC04"]),  // DevClub Red to Yellow
-        
-        Game(name: "Hikaye Oluşturma", 
+        Game(name: "İnteraktif Hikayeler", 
              icon: "📚", 
              description: "Seçeneklere göre hikaye ilerleyecek - yaratıcılığını konuştur!", 
              isAvailable: true,
              gradient: ["#4facfe", "#00f2fe"]),  // Blue to Cyan
+        
+        Game(name: "Ben Kimim?", 
+             icon: "🎭", 
+             description: "Kartları tahmin et, eğlen!", 
+             isAvailable: true,
+             gradient: ["#EA4335", "#FBBC04"]),  // DevClub Red to Yellow
         
         Game(name: "Startup Challenge", 
              icon: "🚀", 

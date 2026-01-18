@@ -16,20 +16,47 @@ struct GameCardView: View {
         Button(action: onTap) {
             ZStack {
                 // Card Background with Liquid Glass Effect
-                RoundedRectangle(cornerRadius: 25)
+                let cardShape = RoundedRectangle(cornerRadius: 25, style: .continuous)
+                
+                cardShape
                     .fill(.ultraThinMaterial)
+                    // Daha saydam “glass” hissi
+                    .opacity(0.65)
+                    // Specular highlight (yansıma)
                     .overlay(
-                        RoundedRectangle(cornerRadius: 25)
+                        cardShape
+                            .fill(
+                                LinearGradient(
+                                    colors: [
+                                        Color.white.opacity(0.20),
+                                        Color.white.opacity(0.06),
+                                        Color.clear
+                                    ],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                )
+                            )
+                            .blendMode(.screen)
+                    )
+                    // İnce cam çerçeve
+                    .overlay(
+                        cardShape
+                            .stroke(Color.white.opacity(0.18), lineWidth: 1)
+                    )
+                    // Renkli edge glow
+                    .overlay(
+                        cardShape
                             .stroke(
                                 LinearGradient(
                                     colors: gradientColors,
                                     startPoint: .topLeading,
                                     endPoint: .bottomTrailing
                                 ),
-                                lineWidth: 2
+                                lineWidth: 1.5
                             )
+                            .opacity(0.75)
                     )
-                    .shadow(color: .black.opacity(0.1), radius: 10, x: 0, y: 5)
+                    .shadow(color: .black.opacity(0.08), radius: 12, x: 0, y: 6)
                 
                 VStack(spacing: 16) {
                     // Game Icon
@@ -82,7 +109,7 @@ struct GameCardView: View {
                 .opacity(game.isAvailable ? 1.0 : 0.7)
             }
         }
-        .buttonStyle(PlainButtonStyle())
+        .buttonStyle(.plain)
         .scaleEffect(isPressed ? 0.95 : 1.0)
         .onLongPressGesture(minimumDuration: 0, maximumDistance: .infinity, pressing: { pressing in
             withAnimation(.easeInOut(duration: 0.1)) {

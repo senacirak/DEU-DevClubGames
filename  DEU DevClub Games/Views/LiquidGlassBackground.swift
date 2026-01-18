@@ -9,6 +9,7 @@ import SwiftUI
 
 struct LiquidGlassBackground: View {
     @State private var moveGradient = false
+    var isAnimationEnabled: Bool = true
     
     var body: some View {
         ZStack {
@@ -42,8 +43,8 @@ struct LiquidGlassBackground: View {
                     )
                     .frame(width: 400, height: 400)
                     .offset(
-                        x: moveGradient ? -100 : 100,
-                        y: moveGradient ? -150 : 150
+                        x: isAnimationEnabled ? (moveGradient ? -100 : 100) : 0,
+                        y: isAnimationEnabled ? (moveGradient ? -150 : 150) : 0
                     )
                     .blur(radius: 40)
                 
@@ -63,8 +64,8 @@ struct LiquidGlassBackground: View {
                     )
                     .frame(width: 300, height: 300)
                     .offset(
-                        x: moveGradient ? 120 : -120,
-                        y: moveGradient ? 200 : -200
+                        x: isAnimationEnabled ? (moveGradient ? 120 : -120) : 0,
+                        y: isAnimationEnabled ? (moveGradient ? 200 : -200) : 0
                     )
                     .blur(radius: 30)
                 
@@ -84,14 +85,24 @@ struct LiquidGlassBackground: View {
                     )
                     .frame(width: 350, height: 350)
                     .offset(
-                        x: moveGradient ? 80 : -80,
-                        y: moveGradient ? -100 : 100
+                        x: isAnimationEnabled ? (moveGradient ? 80 : -80) : 0,
+                        y: isAnimationEnabled ? (moveGradient ? -100 : 100) : 0
                     )
                     .blur(radius: 50)
             }
             .onAppear {
+                guard isAnimationEnabled else { return }
                 withAnimation(.easeInOut(duration: 8).repeatForever(autoreverses: true)) {
                     moveGradient.toggle()
+                }
+            }
+            .onChange(of: isAnimationEnabled) { _, newValue in
+                if newValue {
+                    withAnimation(.easeInOut(duration: 8).repeatForever(autoreverses: true)) {
+                        moveGradient = true
+                    }
+                } else {
+                    moveGradient = false
                 }
             }
             

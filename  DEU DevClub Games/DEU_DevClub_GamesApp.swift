@@ -11,8 +11,8 @@ import SwiftUI
 struct DEU_DevClub_GamesApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
-                .preferredColorScheme(.dark) // Liquid Glass efektleri için dark mode
+            ContentView()
         }
     }
 }
+

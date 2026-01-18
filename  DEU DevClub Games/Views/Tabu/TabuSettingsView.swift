@@ -11,11 +11,13 @@ struct TabuSettingsView: View {
     @StateObject private var viewModel = TabuGameViewModel()
     @Environment(\.dismiss) private var dismiss
     @State private var showingGame = false
+    @FocusState private var isEditingTeamName: Bool
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
-                LiquidGlassBackground()
+                // TextField odaklanınca (klavye açılınca) pahalı arka plan animasyonunu durdur
+                LiquidGlassBackground(isAnimationEnabled: !isEditingTeamName)
                 
                 ScrollView {
                     VStack(spacing: 24) {
@@ -30,7 +32,7 @@ struct TabuSettingsView: View {
                             
                             Text("Takım oyunu – yasaklı kelimeleri kullanmadan anlat!")
                                 .font(.system(size: 16, weight: .medium, design: .rounded))
-                                .foregroundStyle(.secondary)
+                                .foregroundStyle(Color.white)
                                 .multilineTextAlignment(.center)
                         }
                         .padding(.top)
@@ -49,12 +51,14 @@ struct TabuSettingsView: View {
                                         text: $viewModel.team1Name,
                                         icon: "person.2.fill"
                                     )
+                                    .focused($isEditingTeamName)
                                     
                                     CustomTextField(
                                         title: "Takım 2",
                                         text: $viewModel.team2Name,
                                         icon: "person.2.fill"
                                     )
+                                    .focused($isEditingTeamName)
                                 }
                             }
                             
@@ -89,7 +93,15 @@ struct TabuSettingsView: View {
                                             in: 30...120,
                                             step: 15
                                         )
-                                        .accentColor(.blue)
+                                        .tint(.blue)
+                                        .padding(.vertical, 10)
+                                        .padding(.horizontal, 12)
+                                        .background(.ultraThinMaterial, in: Capsule())
+                                        .overlay(
+                                            Capsule()
+                                                .stroke(Color.white.opacity(0.18), lineWidth: 1)
+                                        )
+                                        .shadow(color: .black.opacity(0.08), radius: 8, x: 0, y: 4)
                                     }
                                     
                                     // Max Rounds
@@ -113,43 +125,15 @@ struct TabuSettingsView: View {
                                             in: 2...10,
                                             step: 2
                                         )
-                                        .accentColor(.green)
+                                        .tint(.green)
+                                        .padding(.vertical, 10)
+                                        .padding(.horizontal, 12)
+                                        .background(.ultraThinMaterial, in: Capsule())
+                                        
+                                        .shadow(color: .black.opacity(0.08), radius: 8, x: 0, y: 4)
                                     }
-                                }
                             }
-                            
-                            Divider()
-                                .background(.quaternary)
-                            
-                            // Categories
-                            VStack(spacing: 16) {
-                                HStack {
-                                    Image(systemName: "tag.fill")
-                                        .foregroundStyle(.yellow)
-                                    Text("Kategoriler")
-                                        .font(.system(size: 20, weight: .semibold, design: .rounded))
-                                        .foregroundStyle(.primary)
-                                    Spacer()
-                                }
-                                
-                                LazyVGrid(columns: [
-                                    GridItem(.flexible()),
-                                    GridItem(.flexible())
-                                ], spacing: 12) {
-                                    ForEach(viewModel.allCategories, id: \.self) { category in
-                                        CategoryToggle(
-                                            category: category,
-                                            isSelected: viewModel.selectedCategories.contains(category)
-                                        ) {
-                                            if viewModel.selectedCategories.contains(category) {
-                                                viewModel.selectedCategories.remove(category)
-                                            } else {
-                                                viewModel.selectedCategories.insert(category)
-                                            }
-                                        }
-                                    }
-                                }
-                            }
+                        }
                         }
                         .padding(24)
                         .background(.regularMaterial)
@@ -174,15 +158,14 @@ struct TabuSettingsView: View {
                             .background(.primaryGradient)
                             .clipShape(RoundedRectangle(cornerRadius: 16))
                         }
-                        .disabled(viewModel.selectedCategories.isEmpty)
-                        .opacity(viewModel.selectedCategories.isEmpty ? 0.6 : 1.0)
                     }
                     .padding()
                 }
+                .scrollDismissesKeyboard(.interactively)
             }
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
+                ToolbarItem(placement: .topBarLeading) {
                     Button {
                         dismiss()
                     } label: {
@@ -215,40 +198,13 @@ struct CustomTextField: View {
             
             TextField(title, text: $text)
                 .font(.system(size: 16, weight: .medium, design: .rounded))
+                .textInputAutocapitalization(.words)
+                .autocorrectionDisabled()
+                .submitLabel(.done)
         }
         .padding()
         .background(.secondary.opacity(0.3))
         .clipShape(RoundedRectangle(cornerRadius: 12))
-    }
-}
-
-struct CategoryToggle: View {
-    let category: String
-    let isSelected: Bool
-    let onToggle: () -> Void
-    
-    var body: some View {
-        Button(action: onToggle) {
-            HStack(spacing: 8) {
-                Image(systemName: isSelected ? "checkmark.circle.fill" : "circle")
-                    .foregroundStyle(isSelected ? .green : .secondary)
-                
-                Text(category)
-                    .font(.system(size: 14, weight: .medium, design: .rounded))
-                    .foregroundStyle(isSelected ? .primary : .secondary)
-                
-                Spacer()
-            }
-            .padding(.horizontal, 12)
-            .padding(.vertical, 8)
-            .background(isSelected ? .green.opacity(0.1) : .secondary.opacity(0.2))
-            .clipShape(RoundedRectangle(cornerRadius: 8))
-            .overlay(
-                RoundedRectangle(cornerRadius: 8)
-                    .stroke(isSelected ? .green.opacity(0.3) : .clear, lineWidth: 1)
-            )
-        }
-        .buttonStyle(PlainButtonStyle())
     }
 }
 

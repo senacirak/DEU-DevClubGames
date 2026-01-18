@@ -6,11 +6,19 @@
 //
 
 import SwiftUI
+import UserNotifications
+import UIKit
 
 struct ComingSoonView: View {
     let game: Game
     let onDismiss: () -> Void
     @State private var isAnimating = false
+    
+    @State private var isRequestingNotificationPermission = false
+    @State private var showPermissionAlert = false
+    @State private var permissionAlertTitle = ""
+    @State private var permissionAlertMessage = ""
+    @State private var shouldOfferOpenSettings = false
     
     var body: some View {
         ZStack {
@@ -72,8 +80,7 @@ struct ComingSoonView: View {
                 // Action Buttons
                 VStack(spacing: 12) {
                     Button("Bildirim Al") {
-                        // TODO: Implement notification subscription
-                        onDismiss()
+                        requestNotificationPermission()
                     }
                     .font(.system(size: 16, weight: .semibold, design: .rounded))
                     .foregroundStyle(.white)
@@ -87,6 +94,7 @@ struct ComingSoonView: View {
                         )
                     )
                     .clipShape(RoundedRectangle(cornerRadius: 12))
+                    .disabled(isRequestingNotificationPermission)
                     
                     Button("Kapat") {
                         onDismiss()
@@ -117,12 +125,78 @@ struct ComingSoonView: View {
                 isAnimating.toggle()
             }
         }
+        .alert(permissionAlertTitle, isPresented: $showPermissionAlert) {
+            if shouldOfferOpenSettings {
+                Button("Ayarlar'a Git") {
+                    openAppSettings()
+                }
+                Button("Vazgeç", role: .cancel) {}
+            } else {
+                Button("Tamam", role: .cancel) {}
+            }
+        } message: {
+            Text(permissionAlertMessage)
+        }
     }
     
     private var gradientColors: [Color] {
         game.gradient.compactMap { hex in
             Color(hex: hex)
         }
+    }
+    
+    private func requestNotificationPermission() {
+        guard !isRequestingNotificationPermission else { return }
+        isRequestingNotificationPermission = true
+        
+        UNUserNotificationCenter.current().getNotificationSettings { settings in
+            switch settings.authorizationStatus {
+            case .authorized, .provisional, .ephemeral:
+                DispatchQueue.main.async {
+                    isRequestingNotificationPermission = false
+                    shouldOfferOpenSettings = false
+                    permissionAlertTitle = "Bildirimler Açık"
+                    permissionAlertMessage = "Bildirim izni zaten verilmiş."
+                    showPermissionAlert = true
+                }
+                
+            case .denied:
+                DispatchQueue.main.async {
+                    isRequestingNotificationPermission = false
+                    shouldOfferOpenSettings = true
+                    permissionAlertTitle = "Bildirimler Kapalı"
+                    permissionAlertMessage = "Bildirimleri açmak için Ayarlar > Bildirimler kısmından izin verebilirsin."
+                    showPermissionAlert = true
+                }
+                
+            case .notDetermined:
+                UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, _ in
+                    DispatchQueue.main.async {
+                        isRequestingNotificationPermission = false
+                        shouldOfferOpenSettings = !granted
+                        permissionAlertTitle = granted ? "Teşekkürler!" : "İzin Verilmedi"
+                        permissionAlertMessage = granted
+                        ? "Artık bildirim gönderebiliriz."
+                        : "Bildirim almak istersen Ayarlar'dan izni açabilirsin."
+                        showPermissionAlert = true
+                    }
+                }
+                
+            @unknown default:
+                DispatchQueue.main.async {
+                    isRequestingNotificationPermission = false
+                    shouldOfferOpenSettings = false
+                    permissionAlertTitle = "Hata"
+                    permissionAlertMessage = "Bildirim izni durumu okunamadı."
+                    showPermissionAlert = true
+                }
+            }
+        }
+    }
+    
+    private func openAppSettings() {
+        guard let url = URL(string: UIApplication.openSettingsURLString) else { return }
+        UIApplication.shared.open(url)
     }
 }
 

@@ -8,14 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("appAppearance") private var appAppearanceRawValue: String = AppAppearance.system.rawValue
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        RootTabView()
+            .preferredColorScheme(AppAppearance(rawValue: appAppearanceRawValue)?.colorScheme)
+    }
+}
+
+struct RootTabView: View {
+    var body: some View {
+        TabView {
+            HomeView()
+                .tabItem {
+                    Label("Ana Sayfa", systemImage: "house.fill")
+                }
+
+            SettingsView()
+                .tabItem {
+                    Label("Ayarlar", systemImage: "gearshape.fill")
+                }
         }
-        .padding()
     }
 }
 

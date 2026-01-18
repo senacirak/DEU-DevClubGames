@@ -12,7 +12,7 @@ struct HomeView: View {
     @State private var selectedGame: Game?
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 // Liquid Glass Background
                 LiquidGlassBackground()
@@ -24,32 +24,32 @@ struct HomeView: View {
                             // DEU DevClub - Kompakt
                             HStack(spacing: 2) {
                                 Text("D")
-                                    .font(.system(size: 24, weight: .black, design: .rounded))
-                                    .foregroundStyle(.blue)
-                                Text("E")
-                                    .font(.system(size: 24, weight: .black, design: .rounded))
-                                    .foregroundStyle(.red)
-                                Text("U")
-                                    .font(.system(size: 24, weight: .black, design: .rounded))
+                                    .font(.system(size: 28, weight: .black, design: .rounded))
                                     .foregroundStyle(.yellow)
+                                Text("E")
+                                    .font(.system(size: 28, weight: .black, design: .rounded))
+                                    .foregroundStyle(.blue)
+                                Text("U")
+                                    .font(.system(size: 28, weight: .black, design: .rounded))
+                                    .foregroundStyle(.red)
                                 
                                 Text(" DevClub")
-                                    .font(.system(size: 24, weight: .bold, design: .rounded))
+                                    .font(.system(size: 28, weight: .bold, design: .rounded))
                                     .foregroundStyle(.green)
                             }
                             
                             // GAMES - Daha küçük
                             Text("GAMES")
-                                .font(.system(size: 36, weight: .heavy, design: .rounded))
+                                .font(.system(size: 39, weight: .heavy, design: .rounded))
                                 .foregroundStyle(.primaryGradient)
                                 .tracking(1)
                             
                             // Küçük ayırıcı
                             HStack(spacing: 4) {
                                 Circle().fill(.blue).frame(width: 4, height: 4)
-                                Circle().fill(.red).frame(width: 4, height: 4)
                                 Circle().fill(.yellow).frame(width: 4, height: 4)
                                 Circle().fill(.green).frame(width: 4, height: 4)
+                                Circle().fill(.red).frame(width: 4, height: 4)
                             }
                         }
                         .padding(.top, 20)
@@ -85,7 +85,7 @@ struct HomeView: View {
                     }
                 }
             }
-            .navigationBarHidden(true)
+            .toolbar(.hidden, for: .navigationBar)
         }
         .sheet(isPresented: $viewModel.showingComingSoon) {
             if let game = viewModel.selectedUnavailableGame {
@@ -109,10 +109,10 @@ struct GameNavigationView: View {
             switch game.name {
             case "Tabu":
                 TabuSettingsView()
-            case "Emoji Challenge":
-                EmojiGameView()
-            case "Hikaye Oluşturma":
+            case "İnteraktif Hikayeler":
                 StorySelectionView()
+            case "Ben Kimim?":
+                BenKimimGameView()
             default:
                 ComingSoonView(game: game) {
                     dismiss()

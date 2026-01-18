@@ -25,17 +25,17 @@ class HomeViewModel: ObservableObject {
                  isAvailable: true,
                  gradient: ["#667eea", "#764ba2"]),
             
-            Game(name: "Emoji Challenge", 
-                 icon: "😀", 
-                 description: "Emojilerle ipucu ver, diğerleri tahmin etsin!", 
-                 isAvailable: true,
-                 gradient: ["#f093fb", "#f5576c"]),
-            
-            Game(name: "Hikaye Oluşturma", 
+            Game(name: "İnteraktif Hikayeler", 
                  icon: "📚", 
                  description: "Seçeneklere göre hikaye ilerleyecek - yaratıcılığını konuştur!", 
-                 isAvailable: false,
+                 isAvailable: true,
                  gradient: ["#4facfe", "#00f2fe"]),
+            
+            Game(name: "Ben Kimim?", 
+                 icon: "🎮", 
+                 description: "Ünlü kişileri tanıma oyunu - sağa kaydır doğru, sola kaydır pas!", 
+                 isAvailable: true,
+                 gradient: ["#6B5B95", "#8B7BAE"]),
             
             Game(name: "Startup Challenge", 
                  icon: "🚀", 

@@ -27,7 +27,6 @@ class TabuGameViewModel: ObservableObject {
     @Published var team1Name = "Takım 1"
     @Published var team2Name = "Takım 2"
     @Published var roundDuration = 60
-    @Published var selectedCategories: Set<String> = []
     
     private var timer: Timer?
     private var allCards: [Card] = []
@@ -41,7 +40,6 @@ class TabuGameViewModel: ObservableObject {
     
     init() {
         loadCards()
-        loadAllCategories()
     }
     
     private func loadCards() {
@@ -60,11 +58,6 @@ class TabuGameViewModel: ObservableObject {
         }
     }
     
-    private func loadAllCategories() {
-        let categories = Set(allCards.compactMap { $0.category })
-        selectedCategories = categories
-    }
-    
     func startGame() {
         prepareCards()
         resetTimer()
@@ -76,12 +69,8 @@ class TabuGameViewModel: ObservableObject {
     }
     
     private func prepareCards() {
-        let filteredCards = allCards.filter { card in
-            guard let category = card.category else { return true }
-            return selectedCategories.contains(category)
-        }
-        
-        cards = Array(filteredCards.shuffled().prefix(50))
+        // Tüm kartları karıştır ve kullan
+        cards = Array(allCards.shuffled().prefix(50))
         currentCardIndex = 0
     }
     
@@ -186,10 +175,6 @@ class TabuGameViewModel: ObservableObject {
         } else {
             return "Berabere!"
         }
-    }
-    
-    var allCategories: [String] {
-        return Array(Set(allCards.compactMap { $0.category })).sorted()
     }
     
     deinit {

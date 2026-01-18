@@ -1,0 +1,1164 @@
+scenes: [
+                StoryScene(
+                    id: "scene_1",
+                    title: "Hikaye Başlıyor",
+                    content: """Dışarıda sirenler kulakları tırmalıyor, ardından gelen sarsıntıyla birlikte devasa katedralin vitray camları zangırdıyordu. Az önce itiraflarını sıralayan günahkârlar ve günah çıkaran Peder, şimdi aynı kaderin mahkumlarıydı. Patlamanın şiddetiyle katedralin devasa ahşap kapıları içeri çökmüş, girişi tonlarca molozla kapatmıştı. Toz bulutu dağıldığında, loş ve tekinsiz bir sessizlik çöktü. Kutsal mekân, artık bir mezardı. Beş kişi, birbirlerine korku ve güvensizlikle bakıyorlardı. "Dr. Altan (Bilim İnsanı): "Soğukkanlı ve analitik. Gözleri sürekli çevreyi tarıyor, bir çıkış yolu, bir zayıf nokta arıyordu. "İsmail (Kasap): "İri yarı ve pragmatik. Bu durumdan kaba kuvvetle çıkılabileceğine inanıyor gibiydi. Ellerini ovuşturuyordu. "Cem (Tıp Öğrencisi): "Titrek ve solgun. Terliyordu ve gözleri seğiriyordu. Krizin eşiğinde olduğu her halinden belliydi. "Peder Elvan (Din Adamı): "Üzerindeki cübbeye rağmen gözlerinde dünyevi bir kurnazlık vardı. Sakin görünmeye çalışsa da, asıl endişesi farklıydı. "Selin (Influencer): "Telefonunda sinyal olmadığını fark edince yüzü düştü. Dünyayla bağlantısı kopmuştu. Bu, onun için ölümden beterdi.""",
+                    choices: [
+                        StoryChoice(
+                            text: "1.Tur İlk Hamle",
+                            nextSceneId: "scene_2"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_2",
+                    title: "1.Tur İlk Hamle",
+                    content: """Toz ve çaresizlik kokan havayı ilk bölen, Kasap İsmail'in tok sesi oldu. "Boş boş duracak mıyız? Bir şey yapmalı." Herkes ona döndü. Bu küçük, bahtsız topluluğun ilk karar anı gelmişti. "1. TUR: İLK HAMLE" Katedralin içinde sıkışıp kaldınız. Dışarıda ne olduğunu bilmiyorsunuz ama içerideki hava giderek ağırlaşıyor. Bir an önce bir plan yapmalısınız. "A)" Hemen bir çıkış yolu aramaya odaklanalım. Katedralin yapısını inceleyip zayıf bir nokta, bir mahzen veya alternatif bir geçit bulmaya çalışalım. Vakit kaybetmek her şeyi daha da kötüleştirebilir. "B) "Acele etmeyelim. Önce sakinleşip durumu değerlendirelim. Katedralin içinde kullanabileceğimiz su, yiyecek veya ilk yardım malzemesi gibi kaynakları araştıralım. Dışarısı içeriden daha tehlikeli olabilir.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) Acele ile çıkış yolu arayalım.",
+                            nextSceneId: "scene_3"
+                        ),
+                        StoryChoice(
+                            text: "B) Acele etmeyelim. Durumu değerlendirelim",
+                            nextSceneId: "scene_4"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_3",
+                    title: "A) Acele ile çıkış yolu arayalım.",
+                    content: """Dr. Altan, analitik zekasıyla hemen liderliği ele alır. "Dağılalım. İsmail Bey, siz ve ben şu taraftaki sunak arkasını ve mahzen kapısını kontrol edelim. Diğerleri, katedralin yan koridorlarını ve papazın odası gibi daha küçük bölmeleri incelesin. Birbirimizden ayrılmayalım ama alanı tarayalım." Herkes bu mantıklı öneriyi isteksizce de olsa kabul eder. Selin, telefonunun ışığını açarak etrafı incelerken bir yandan da kendi kendine söylenir. Tıp öğrencisi Cem ise elleri titreyerek duvarları yoklamaktadır; aklı bir çıkış yolundan çok, gittikçe şiddetlenen ihtiyacındadır. Peder Elvan, katedrali herkesten iyi bilmesine rağmen sanki bir şeyleri saklıyor gibi ağırdan almaktadır. Yaklaşık yirmi dakikalık bir araştırmanın ardından İsmail'in boğuk sesi duyulur: "Burada! Bir kapı var!" Herkes sesin geldiği, ana sunağın arkasındaki loş bölmeye toplanır. İsmail, duvara neredeyse kusursuzca gizlenmiş, paslı ve demir bir kapıyı işaret etmektedir. Bu, muhtemelen katedralin altındaki mezarlığa veya katakomplara inen bir yoldur //(Katakomblar yeraltında bulunan çoğunlukla ölülerin gömülmesine hizmet eden tonozlu yapılardır). //Ancak devasa ve eski bir asma kilitle kilitlenmiştir. Dr. Altan kilidi inceler. "Bunu normal yollarla açmamız imkânsız." Kasap İsmail, demir kapıyı yumruklar. "O zaman normal olmayan yolları deneriz." Gözü, sunakta duran ağır ve metal bir şamdana takılır. "Şununla kilidi kırabiliriz." Peder Elvan hemen atılır. "Durun! Bu kutsal bir emanettir ve kapının ardında ne olduğunu bilmiyoruz. Yapıyı zayıflatıp başımıza yıkabilirsiniz." Dr. Altan, Pedere doğru döner, gözlerinde soğuk bir bakış vardır. "Siz bu katedralin görevlisisiniz, Peder. Bu kilidin bir anahtarı olmalı. Nerede olduğunu biliyor musunuz?" Peder yutkunur. Gerilim elle tutulur hale gelmiştir.""",
+                    choices: [
+                        StoryChoice(
+                            text: "2.Tur Kilitli Kapı",
+                            nextSceneId: "scene_5"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_4",
+                    title: "B) Acele etmeyelim. Durumu değerlendirelim",
+                    content: """Peder Elvan, durumu kontrol altına almak istercesine öne çıkar. "Haklısınız. Panik bize sadece zarar verir. Sakin kalıp Tanrı'ya sığınmalıyız. Önce etrafta işimize yarayacak bir şeyler arayalım. Sunak odasında kutsal ayin için kullanılan su ve şarap olmalı. Ayrıca bir ilk yardım çantası da bulunması gerekir." Grup, Peder'in peşinden katedralin daha küçük ve özel bölümlerine doğru ilerler. Selin, "Şarj aleti bulma ihtimalimiz yüzde kaç?" diye sorar ama kimse cevap vermez. Cem ise gittikçe daha solgun görünmektedir. Soğuk terler döküyor ve sürekli esniyordur. Krizin başlangıç belirtileri herkesin gözünden kaçmaz. Peder Elvan'ın kişisel odasına girdiklerinde, küçük bir ecza dolabı bulurlar. İçinde birkaç sargı bezi, tentürdiyot ve ağrı kesici vardır. Ancak dolabın altındaki çekmeceyi açan Selin, küçük bir çığlık atar. Çekmecenin içinde, özenle paketlenmiş küçük poşetler halinde uyuşturucu ve bir tomar para durmaktadır. Herkes Peder Elvan'a döner. Kutsal adam maskesi düşmüş, yerine Torbacı Elvan'ın kurnaz ve endişeli yüzü belirmiştir. Tam o sırada Cem, poşetleri görür görmez Peder'in üzerine atılır. "Ver onu! Vermelisin!" diye bağırır. İsmail, Cem'i zorlukla tutarken Cem'in çırpınışları ve yalvarışları katedralin duvarlarında yankılanır. Durumu kritikleşmektedir. Kontrolünü tamamen kaybetmesi an meselesidir. "2. TUR : ORTAYA ÇIKAN SIR" Peder'in sırrı ortaya çıkmış ve grubun en zayıf halkası olan Cem kontrolden çıkmak üzeredir. Vereceğiniz karar, Cem'in ve dolayısıyla grubun dengesini belirleyecek. Seçiminiz nedir? "A) "Kesinlikle uyuşturucuya izin vermeyelim. İsmail'in yardımıyla Cem'i bağlayıp bir odaya kapatalım. Krizini tek başına atlatmak zorunda. Bu haldeyken ona güvenemeyiz ve kaynakları onun için tüketemeyiz. "B)" Cem'i sakinleştirmek için Peder'in uyuşturucusundan küçük bir doz kontrollü olarak verelim. Şu anda çıldırmış bir bağımlıyla uğraşamayız. Onu sakin tutmak, herkesin hayrına olacaktır.""",
+                    choices: []
+    ),
+                StoryScene(
+                    id: "scene_5",
+                    title: "2.Tur Kilitli Kapı",
+                    content: """"2. TUR - KİLİTLİ KAPI" Karşınızda kilitli bir kapı ve iki farklı yaklaşım var. Grubun kaderi bu karara bağlı olabilir. Seçiminiz nedir? "A)" İsmail'in önerisini dinleyip şamdanla kilidi kırmaya çalışalım. Kaba kuvvet, şu an en hızlı çözüm gibi görünüyor. Risk almaktan başka çaremiz yok. "B)" Dr. Altan'ın şüphesinin üzerine gidelim ve Peder Elvan'ı sıkıştıralım. Anahtar kesinlikle onda veya bildiği bir yerde. Onu konuşturarak daha güvenli bir yol izleyebiliriz.""",
+                    choices: []
+    ),
+                StoryScene(
+                    id: "scene_6",
+                    title: "A) İsmail'i dinleyelim.",
+                    content: """İsmail'in kaba kuvvetiyle parçalanan kilidin ardındaki demir kapı, gıcırdayarak aralandı. İçeriden gelen küf, toprak ve unutulmuşluk kokusu genizlerini yaktı. Selin'in telefonunun cılız ışığı, aşağıya doğru kıvrılan taş merdivenlerin ilk birkaç basamağını aydınlatıyor, gerisini ise yutuyordu. Bu karanlık, katedralin loşluğundan çok daha yoğun, çok daha yırtıcıydı. Dr. Altan, "Birlikte kalmalıyız," dedi kararlı bir sesle. "Ama birimizin önden gidip yolu kontrol etmesi gerek." Bu cümle, odadaki herkesin birbirine şüpheyle bakmasına yetti. O karanlığa ilk adımı atmak, bir nevi kendini feda etmekti. Gözler, grubun en cesur ve en güçlü üyesiyle en zeki ve en dikkatli üyesi arasında gidip geldi.""",
+                    choices: [
+                        StoryChoice(
+                            text: "3.Tur Karanlığa İlk Adım",
+                            nextSceneId: "scene_8"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_7",
+                    title: "B) Peder Elvan'ı sıkıştıralım.",
+                    content: """"3. TUR : BİLİNMEZE GİDEN YOL" Peder Elvan'ın titreyen ellerinden alınan paslı anahtar, kilitte zorlanarak döndü ve tok bir "tık" sesiyle asırlık mekanizmayı serbest bıraktı. Kapı aralandığında içeri dolan ağır hava, Peder'in anlattığı tekinsiz hikayeleri doğrular gibiydi. Aşağıya inen merdivenler, bir mezarın boğazı gibi karanlık ve davetsizdi. Peder'in "Oraya bir kez giren bir daha çıkamaz," fısıltısı herkesin zihninde yankılanıyordu. Selin, "Bu adama güvenemeyiz," dedi. "Bizi tuzağa çekiyor olabilir." İsmail ise Peder'i omzundan yakaladı. "Eğer bir oyun oynamaya kalkarsan, dilini kendi ellerimle boğazına dolarım, anladın mı papaz efendi?" Grup, açık bir kapının önünde, kapalı bir kutunun içindeydi. Aşağıdaki labirent mi, yoksa yukarıdaki nükleer enkaz mı daha ölümcüldü? Seçiminiz nedir? "A)" Peder'i önümüze katıp zorla bize rehberlik etmesini sağlayalım. Onu en öne süreceğiz. Eğer bir tuzak varsa, ilk o basacak. Kaçmaması için elini İsmail'in kemerine bağlayalım. "B)" Riske girmeyelim. Kapıyı tekrar kilitleyip katedralin içinde başka bir çıkış yolu veya hayatta kalma yöntemi aramaya devam edelim. Peder'in bildiği başka sırlar da olabilir. Bu adam, göründüğünden daha fazlasını biliyor.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) Pederi öne sür.",
+                            nextSceneId: "scene_27"
+                        ),
+                        StoryChoice(
+                            text: "B) Kapıyı tekrar kilitle.",
+                            nextSceneId: "scene_28"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_8",
+                    title: "3.Tur Karanlığa İlk Adım",
+                    content: """Seçiminiz nedir? "A-)"En güçlü ve cesur görünen İsmail önden gitmeli. Kaba kuvvetiyle olası bir fiziksel tehlikeye karşı ilk savunmayı o yapabilir. Dr. Altan, hemen arkasından onu yönlendirecek. "B-)"En zeki ve dikkatli olan Dr. Altan önden gitmeli. Bir tuzağı veya yapısal bir zayıflığı kaba kuvvetten önce fark edebilir. İsmail, hemen arkasından onu koruyacak.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) İsmail önden gitsin.",
+                            nextSceneId: "scene_9"
+                        ),
+                        StoryChoice(
+                            text: "B) Dr. Altan önden gitsin.",
+                            nextSceneId: "scene_10"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_9",
+                    title: "A) İsmail önden gitsin.",
+                    content: """"Ben giderim," diye homurdandı İsmail. Bu işin kaba kuvvet gerektirdiğini hissetmişti. Selin'in elindeki telefonu alıp bir el feneri gibi tutarak ağır adımlarla merdivenlerden inmeye başladı. Adımları, duvarlarda yankılanıyordu. Diğerleri nefeslerini tutmuş, birkaç basamak geriden onu takip ediyordu. Merdivenler dar bir koridora açılıyordu. Yerler ıslak ve kaygandı. İsmail onuncu adımını attığında, ayağının altındaki taşlardan biri hafifçe çöktü. Kuru bir "klik" sesi duyuldu. "Durun!" diye bağırdı arkadan Dr. Altan ama çok geçti. Tavandan, paslı zincirlere bağlı devasa, demir bir kapı, bir giyotin gibi aşağıya indi. İsmail, içgüdüsel olarak geriye atlamaya çalıştı ama ıslak zeminde ayağı kaydı. Kapı, korkunç bir sesle tam belinin üzerine indi ve onu yere mıhladı. Bacakları, vücudunun geri kalanından ayrılmıştı. İsmail'in ağzından acı ve şok dolu, insanlık dışı bir çığlık koptu. "İSMAİL ÖLDÜ." Grup, koridorun girişinde donakaldı. Çıkış yolu, şimdi bir ölüm tuzağı ve en güçlü üyelerinin parçalanmış cesediyle mühürlenmişti. "Şimdi 4. Tur'a geçeceksiniz. Grubun kas gücü yok oldu. Geriye kalanlar, bir ölüm tuzağının başında kapana kısıldılar."""",
+                    choices: [
+                        StoryChoice(
+                            text: "4.Tur Ölüm Tuzağı",
+                            nextSceneId: "scene_11"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_10",
+                    title: "B) Dr. Altan önden gitsin.",
+                    content: """"Bekleyin," dedi Dr. Altan. "Aceleci davranmayalım." Telefonun ışığını alıp yavaşça merdivenlerden inmeye başladı. Gözleri sadece bastığı yeri değil, duvarları ve tavanı da tarıyordu. Her adımını dikkatle, ağırlığını yavaşça vererek atıyordu. Merdivenlerin bittiği dar koridora geldiğinde duraksadı. Işığı yere tuttuğunda, taşların üzerindeki belli belirsiz renk farkını gördü. Birkaç taş, diğerlerinden daha temiz ve daha az yosunluydu. "Burada bir baskı plakası var," diye fısıldadı arkasındakilere. "Üzerine basmayın." Tuzağı işaret ederek taşın etrafından dikkatle dolaştı ve ilerledi. Grup, onun dehası sayesinde mutlak bir ölümden kurtulmuştu. Koridorun sonunda, yukarıya doğru çıkan başka bir merdiven ve aralık bir ahşap kapı görünüyorlardı. Temiz hava geliyordu. Dr. Altan kapıyı yavaşça itti. Kapı, katedralin arka bahçesindeki küçük bir anıt mezarın içine açılıyordu. Dışarıdaydılar! Ama sevinçleri kısa sürdü. Gökyüzü, turuncu ve kül rengiydi. Hava, radyoaktif bir tozla kaplıydı ve nefes almak zordu. Ufukta, şehrin yerinde dev bir mantar bulutu yükseliyordu. Kıyametten kaçmamış, tam ortasına düşmüşlerdi. "Şimdi 4. Tur'a geçeceksiniz. Katedralden kaçtınız ama kendinizi nükleer serpintinin ortasında buldunuz. Zehirli havayı solurken bir an önce yeni bir sığınak bulmalısınız. """",
+                    choices: [
+                        StoryChoice(
+                            text: "4.Tur Zehirli Nefes",
+                            nextSceneId: "scene_20"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_11",
+                    title: "4.Tur Ölüm Tuzağı",
+                    content: """İsmail'in son çığlığı, dar koridorun duvarlarında yankılanıp sönerken yerini dehşet dolu bir sessizliğe bıraktı. Dev demir kapı, grubun en güçlü üyesinin cansız bedenini ikiye bölerek yolu tamamen kapatmıştı. Geri dönmek, çöken katedrale; ileri gitmek ise imkânsıza eşitti. Cem, midesi bulanarak duvara yaslandı. Selin'in yüzü bembeyazdı. "Çıkış yok," diye fısıldadı Selin. "Burada öleceğiz." Dr. Altan, paniği bastırmaya çalışarak durumu analiz etmeye başladı. Gözleri, kapının indiği tavan mekanizmasını ve duvarlardaki eski taş işçiliğini tarıyordu. "Her tuzağın bir de devre dışı bırakma mekanizması vardır," dedi kendi kendine. "İlkel ama mantıklı olmalı." Peder Elvan ise korkuyla haçını sıkıyordu. "Bu, Tanrı'nın gazabı... Buradan çıkmamalıydık." Seçiminiz nedir? "A) Mekanizmayı Ara:" Dr. Altan'ın mantığını izleyip, kapıyı kaldıran veya açan gizli bir kol, düğme veya karşı ağırlık mekanizması arayacaklar. Bu, zaman alacak ve dikkat gerektirecek, ancak en güvenli yol olabilir. "B) Cesedi Kullan: "Bu korkunç bir seçenek, ama İsmail'in iri vücudu kapının tam kapanmasını engellemiş olabilir. Kapının altından, cesedin yanından sürünerek geçmeye çalışacaklar. Bu, hem psikolojik olarak yıkıcı hem de kapının tekrar hareket etmesi durumunda ölümcül bir risk taşıyor.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) Mekanizmayı Ara",
+                            nextSceneId: "scene_12"
+                        ),
+                        StoryChoice(
+                            text: "B) Cesedi Kullan",
+                            nextSceneId: "scene_13"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_12",
+                    title: "A) Mekanizmayı Ara",
+                    content: """Grup, umutsuzca duvarları yoklamaya başlar. Yirmi dakikalık sinir bozucu bir arayışın ardından Selin, bir meşale yuvasının arkasında gevşek bir taş fark eder. Taşı ittirdiğinde, içeriden bir zincir sesi gelir ve dev kapı yavaşça, gürleyerek yukarı kalkmaya başlar. Ama bu hareket, asırlık tavanı sarsar. Büyük bir taş blok gevşeyerek tam Peder Elvan'ın üzerine düşer. "PEDER ELVAN ÖLDÜ." Yaşlı adam tek bir ses bile çıkaramadan ezilir. Kapı artık açık, ama bedeli ağır olmuştur. "Yeni Durum: İki kayıpları var ve koridorun ilerisi artık yapısal olarak daha da tehlikeli. " Seçiminiz: "A) "Tehlikeye rağmen hızla ilerleyip katakomplardan çıkmaya çalışmak. "B)" Peder'in cesedinin yanında durup, bu lanetli yoldan geri dönüp katedralde başka bir çözüm aramaya karar vermek.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) Tehlikeye rağmen ilerle.",
+                            nextSceneId: "scene_14"
+                        ),
+                        StoryChoice(
+                            text: "B) Geldiğin yoldan geri dön.",
+                            nextSceneId: "scene_15"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_13",
+                    title: "B) Cesedi Kullan",
+                    content: """Dr. Altan, bu fikre karşı çıksa da çaresizlik baskın gelir. En küçükleri olduğu için ilk denemeyi Selin yapar. Titreyerek yere uzanır ve İsmail'in kanıyla ıslanmış zeminde, demir kapının altındaki dar aralığa doğru sürünmeye başlar. Tam vücudunun yarısı geçtiği sırada, üzerindeki mekanizmadan gelen bir "çıt" sesiyle kapı birkaç santim daha aşağı çöker. Selin'in ciğerlerinden acı dolu bir çığlık kopar. Sıkışmıştır. "SELİN ÖLDÜ." Nefesi kesilerek can verir. Kapı artık tamamen kapanmış, geçiş imkânsız hale gelmiştir.""",
+                    choices: [
+                        StoryChoice(
+                            text: "5.Tur Mezardaki Sessizlik",
+                            nextSceneId: "scene_44"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_14",
+                    title: "A) Tehlikeye rağmen ilerle.",
+                    content: """"Geri dönemeyiz," dedi Dr. Altan, sesindeki kararlılık kendi korkusunu bile bastırmıştı. "Tek şansımız ileride." Bu umutsuz liderliği kabul ederek, Peder'in cesedinin yanından hızla geçip titreyen koridora daldılar. Her adımlarında tavanlarından toz ve küçük taşlar dökülüyordu. Koridor, sonunda yukarı doğru kıvrılan, dar ve desteksiz bir spiral merdivene ulaştı. Merdivenin tepesinden, cılız da olsa bir gün ışığı sızıyordu. Bu, bir çıkış olmalıydı. Ama merdiven, adeta bir fısıltıyla bile yıkılacak gibi duruyordu. "Nasıl geçeceğiz?" diye fısıldadı Selin. "Bu bizi taşımaz." Son Seçiminiz: "A) Riskli ama Mantıklı Plan:" Dr. Altan, "Aramızdaki en hafif ve çevik olan Selin," der. "Sen önden git. Yavaş ve dikkatli ol. Eğer merdiven sağlamsa, biz de arkandan geleceğiz." Bu, Selin'i bir yem olarak kullanmak ama aynı zamanda hayatta kalma şanslarını artırmak demekti. "B) Birlikte Yüklenme:" Cem, panikle "Ayrılamayız!" diye bağırır. "Birlikte tırmanmalıyız, birbirimize destek olarak!" Bu, riski paylaşmak ama aynı zamanda merdivenlere dayanabileceğinden çok daha fazla yük bindirmek anlamına geliyordu.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) Riskli ama Mantıklı Plan",
+                            nextSceneId: "scene_16"
+                        ),
+                        StoryChoice(
+                            text: "B) Birlikte Yüklenme",
+                            nextSceneId: "scene_17"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_15",
+                    title: "B) Geldiğin yoldan geri dön.",
+                    content: """"Bu delilik," dedi Selin ağlayarak. "Geri dönelim. Lütfen geri dönelim." Dr. Altan, grubun psikolojisinin daha fazla riski kaldıramayacağını anladı. "Tamam," dedi pes ederek. "Geri dönüyoruz." Ancak umudun tamamen tükendiği bu geri dönüş, çılgınlığın bulaşıcı doğasını ortaya çıkardı. Katedralin loş ve tanıdık ama artık daha da umutsuz görünen atmosferine geri döndüklerinde, Cem'in titremeleri şiddetlendi. Gözleri kan çanağına dönmüştü. "Hiçbir şey değişmedi!" diye bağırdı. "Yine aynı cehennemdeyiz! Hepsi sizin yüzünüzden! Bizi oyaladınız!" Cem'in öfkesi, özellikle kararları veren Dr. Altan'a yönelmişti. Elindeki paslı bir şamdan parçasını sıkarak Dr. Altan'ın üzerine yürüdü. Son Seçiminiz: "A) Fiziksel Müdahale: "Selin, Dr. Altan'a "Dikkat et!" diye bağırır ve yakındaki bir sandalye ayağını kaparak Cem ile Altan'ın arasına girmeye çalışır. "Ona yaklaşma!" diyerek Cem'i tehdit eder. "B) Mantıksal Savunma:" Dr. Altan, bir adım geri çekilir ve sakin kalmaya çalışır. "Cem, sakin ol. Bu bir kriz. Sana yardım edebilirim. Sadece o elindekini yere bırak." Aklını kullanarak, deliliğin ateşini söndürmeye çalışır.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) Fiziksel Müdahale",
+                            nextSceneId: "scene_18"
+                        ),
+                        StoryChoice(
+                            text: "B) Mantıksal Savunma",
+                            nextSceneId: "scene_19"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_16",
+                    title: "A) Riskli ama Mantıklı Plan",
+                    content: """Selin, korkuyla da olsa bu acımasız mantığı kabul eder. Titreyerek ilk basamaklara adım atar. Yavaşça, bir kedi gibi tırmanmaya başlar. Merdivenin yarısına geldiğinde, bastığı taş yerinden oynar ve bir zincirleme reaksiyon başlar. Merdiven, korkunç bir gürültüyle altından çökmeye başlar. Selin'in çığlığı, taşların gümbürtüsü arasında kaybolur. Bu çöküş, zaten dengesiz olan tüm koridorun tavanını tetikler. Dr. Altan ve Cem, arkalarına dönüp kaçacak zaman bile bulamazlar. Tonlarca enkaz, üçünün de üzerine çökerek katakompları onların ebedi mezarı yapar. "HEPSİ ÖLDÜ." "Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_17",
+                    title: "B) Birlikte Yüklenme",
+                    content: """Dr. Altan, Cem'in paniğinin mantığı yenmesine izin verir. "Peki," der. "Aramızda birer basamak boşluk bırakarak çıkın." Üçü birden merdivene yüklenir. Yapı, tehlikeli bir şekilde sallanır ama bir süre dayanır. Ancak Cem, krizin etkisiyle titreyen bacaklarıyla bir basamağı kırar. Dengesini kaybederken panikle Selin'in bacağına yapışır. Selin de dengesini kaybeder. Dr. Altan, ikisini de tutmaya çalışır ama Cem'in ağırlığı çok fazladır. Cem, Selin'i de beraberinde sürükleyerek karanlığa düşer. Dr. Altan ise son anda kendini yukarı çekmeyi başarır. "BİR KİŞİ HAYATTA KALDI: Dr. Altan. Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_18",
+                    title: "A) Fiziksel Müdahale",
+                    content: """"FİNAL: TOZ VE SESSİZLİK" Selin’in çığlığı ve elindeki kaba silah, Cem’in deliliğinin odağını anında değiştirdi. Gözlerindeki kanlı bakışlar Dr. Altan’dan ayrılıp, yeni ve daha ani tehdit olan Selin’e kilitlendi. Mantık ve sebep-sonuç ilişkisi beyninden silinmişti; artık sadece önündeki engelleri yok etmeye programlanmış bir hayvandı. "Sen de!" diye hırladı. "Hepiniz aynısınız!" Selin, Cem üzerine atlarken korkuyla elindeki sandalye ayağını savurdu. Küt bir sesle Cem'in omzuna isabet etti, ancak adrenalin ve uyuşturucu yoksunluğunun verdiği insanüstü güçle Cem sendelemedi bile. Darbeyi hiçe sayarak Selin'in üzerine çullandı. İkisi, kırık sıraların ve moloz yığınlarının arasında boğuşmaya başladılar. Selin'in çığlıkları, Cem'in hayvani hırıltılarına karışıyordu. Dr. Altan, bir anlığına donakaldı. İçindeki doktor, yardım etmesi gerektiğini söylüyordu. Ama içindeki katil, çok daha karanlık bir fırsat görüyordu: İki sorun, birbirini ortadan kaldırıyordu. Bir adım geri çekilerek, bu ölümcül dansı soğukkanlı bir merakla izlemeye başladı. Mücadele, onları patlamanın en çok hasar verdiği, katedralin ana nefinin tavanını taşıyan devasa taş sütunlardan birinin dibine sürükledi. Sütunun dibinde derin bir çatlak uzanıyordu. Cem, sonunda Selin'i alt etmeyi başardı. Elinden kaptığı sandalye ayağını vahşice savurdu. Selin'in çığlığı, boğuk bir sesle kesildi. "SELİN ÖLDÜ." Cem, nefes nefese, kan ve ter içinde doğruldu. Gözleri, gölgelerin içinde sessizce onu izleyen Dr. Altan'ı buldu. Yüzünde çarpık ve zafer dolu bir gülümseme belirdi. Elindeki kanlı sopayı kaldırarak son avına doğru bir adım attı. Ancak o bir adımlık sarsıntı, yaralı sütun için son damla oldu. Önce tavandan bir çatırtı duyuldu. Sonra, ağır çekimdeymiş gibi, devasa sütun içe doğru çöktü. Bu hareket, domino etkisiyle tavanın tüm ana kemerini tetikledi. Cem, yukarıdan üzerine doğru gelen tonlarca taş ve ahşap enkazını fark edecek zaman bile bulamadı. Anında, durduğu yerde ezildi. "CEM ÖLDÜ." Dr. Altan, dehşet içinde olanları izlerken nihayet en büyük hatasını anladı: Hayatta kalma içgüdüsüyle yaptığı hesaplar, içinde bulunduğu mezarın kendisini hesaba katmamıştı. Kaçmak için arkasını döndü ama çok geçti. Katedralin tüm tavanı, kulakları sağır eden bir gümbürtüyle üzerine çöküyordu. Son gördüğü şey, içeri dolan nükleer serpintiyle kirlenmiş kül rengi gökyüzü oldu. "DR. ALTAN ÖLDÜ." Toz bulutu oturduğunda, katedralin yerinde sadece dev bir enkaz yığını vardı. İçerideki tüm sırlar, günahlar ve çığlıklar, tonlarca taşın altında sonsuza dek susturuldu. Nükleer kıyametin ortasında, küçük bir insanlık cehennemi kendi kendini yok etmişti. "HERKES ÖLDÜ. Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_19",
+                    title: "B) Mantıksal Savunma",
+                    content: """Dr. Altan'ın sakin sözleri, Cem'in alev almış zihnine ulaşmaz. "Yardım mı?" diye güler Cem delice. "Asıl yardım bu!" Elindeki şamdanla Altan'a doğru hamle yapar. Altan darbeden kaçınır ama Cem durmaz. Gözü dönmüş bir şekilde Altan'a saldırmaya devam eder. Selin, çığlık atarak araya girmeye çalıştığı sırada Cem'in savurduğu şamdan, kazara Selin'in şakağına isabet eder. Selin, cansız bir şekilde yere yığılır. Bu görüntü, Dr. Altan'ın içindeki doktoru öldürür, yerine sadece hayatta kalmak isteyen birini bırakır. Cem tekrar saldırdığında, Altan onu iter. Cem, dengesini kaybeder ve kafasını sivri bir enkaz parçasına çarparak ölür. "BİR KİŞİ HAYATTA KALDI: Dr. Altan. Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_20",
+                    title: "4.Tur Zehirli Nefes",
+                    content: """"4. TUR: ZEHİRLİ NEFES" Hasta sarısı gökyüzünün altında, havayı dolduran radyoaktif küller genizlerini yakıyordu. Her nefes, ciğerlerine batan binlerce cam kırığı gibiydi. Cem, öksürük krizine girerek dizlerinin üzerine çöktü. Selin, yüzünü ceketinin koluna gömmüş, anlamsızca ağlıyordu. Ufuktaki mantar bulutu, Tanrı'nın onlara sırtını döndüğünün kanıtı gibiydi. "Burada duramayız," dedi İsmail, sesi boğuk çıkıyordu. Gözleri, avlunun karşısındaki, katedralin yan binası olan heybetli ama tekinsiz manastırı tarıyordu. "Oraya ulaşmalıyız. Şimdi!" Dr. Altan ise çıktıkları anıt mezarın taş yapısını inceliyordu. "Delilik bu. Oraya ulaşana kadar ölümcül dozda radyasyon alırız. Bu mezar taştan. Bizi en azından bu serpintiden bir süreliğine korur. Geri girmeliyiz." Zamanları yoktu. Ya bilinmeyen bir sığınağa doğru ölüme koşacaklar ya da çıktıkları klostrofobik mezara geri döneceklerdi. Seçiminiz nedir?: "A) Anıt Mezara Geri Dön:" Dr. Altan'ın temkinli ama klostrofobik planını seçecekler. Beş kişi, daracık mezar odasına geri sığınarak serpintinin geçmesini bekleyecek. "B) Manastıra Koşu:" İsmail'in riskli ama proaktif planını uygulayacaklar. Açık alanda ne kadar kalacaklarını bilmeden, manastırın korumasına ulaşmak için hayatlarını riske atacaklar.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) Anıt Mezara Geri Dön",
+                            nextSceneId: "scene_21"
+                        ),
+                        StoryChoice(
+                            text: "B) Manastıra Koşu",
+                            nextSceneId: "scene_22"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_21",
+                    title: "A) Anıt Mezara Geri Dön",
+                    content: """"5. TUR: SIĞINAĞIN BEDELİ" Beş kişi, tek bir lahitin sığabileceği odaya nefes nefese geri doluştu. İsmail, ağır taş kapıyı arkalarından kapattığında, dış dünyanın zehirli uğultusu kesildi. Ancak yerini çok daha kötü bir şeye bıraktı: Yaklaşan deliliğin sessizliğine. Oksijen hızla tükeniyor, ter kokusu ve korku havayı ağırlaştırıyordu. Cem'in yoksunluk krizi, bu daracık alanda on kat şiddetlendi. Titremeye, sayıklamaya başladı. "Duvarlar... üzerime geliyor," diye inliyordu. "Onu susturun!" diye tısladı Selin panikle. Peder Elvan, bu küçük cehennemde inancının son kırıntılarına tutunmaya çalışıyordu. "Oğlum, sakin ol..." Ama Cem sakinleşemezdi. Bir anda çığlık atarak en yakınındaki kişiye, Peder Elvan'a saldırdı. Dar alanda kimse düzgün hareket edemiyordu. Boğuşma sırasında Peder, dengesini kaybederek arkasındaki duvara sertçe kafasını çarptı. Boynu, doğal olmayan bir açıyla yana düştü. "PEDER ELVAN ÖLDÜ." Cem, yaptığını fark etmeden, şimdi de Selin'e doğru dönmüştü. Gözleri tamamen vahşileşmişti. Seçiminiz : "A) Karantina:" İsmail, daha fazla kan dökülmesini önlemek için devreye girer. Tüm gücünü kullanarak Cem'i etkisiz hale getirir ve Peder'in cübbesiyle onu lahitin üzerine bağlar. Artık bir ceset ve kontrolünü kaybetmiş bir esirle aynı mezardadırlar. "B) Ayıklama: "Dr. Altan, soğuk bir kararla fısıldar: "Bu bir enfeksiyon gibi, İsmail. Yayılmadan durdurulmalı." Bu, İsmail'e Cem'i kalıcı olarak "susturması" için verilmiş üstü kapalı bir emirdir.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) Karantina",
+                            nextSceneId: "scene_23"
+                        ),
+                        StoryChoice(
+                            text: "B) Ayıklama",
+                            nextSceneId: "scene_24"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_22",
+                    title: "B) Manastıra Koşu",
+                    content: """"KOŞUN!" İsmail'in emriyle, grup kendini zehirli avluya attı. Her adım bir işkenceydi. Ciğerleri yanıyor, gözleri sulanıyordu. En arkada kalan Cem, tökezleyip düştü. İsmail bir an duraksadı ama Dr. Altan "Bırak onu!" diye bağırınca koşmaya devam etti. Cem, radyoaktif küllerin altında öksürerek ve sürünerek geride kaldı. "CEM ÖLDÜ." Dört kişi, manastırın devasa ahşap kapısına ulaştı. Kapı kilitliydi. İsmail, bir koçbaşı gibi omzuyla kapıya yüklendi. İkinci denemede, çürümüş ahşap büyük bir gürültüyle içeri doğru parçalandı. Kendilerini manastırın loş ve sessiz ana salonunda buldular. Şimdilik güvendeydiler. Ama yalnız değillerdi. Gölgeden çıkan, onlardan daha bitkin ama daha vahşi görünen üç yabancı, ellerindeki ilkel silahları onlara doğrulttu. "Burası bizim," diye hırladı liderleri. "Yiyecek ve su bizim. Ama kadın... bizimle kalabilir." Bakışları Selin'e kilitlenmişti. Seçiminiz : "A) Fedakarlık:" Dr. Altan, durumu anında tartar. Sayıca azlar ve yorgunlar. "Sakin olun," der diğer gruba. "Anlaşabiliriz." Bakışlarıyla İsmail'e ve Peder'e Selin'i bir pazarlık kozu olarak kullanacaklarını ima eder. "B) İsyan:" İsmail, bu aşağılamayı kabul etmez. "Cehenneme kadar yolunuz var," diye kükrer ve eline geçirdiği kırık bir tahta parçasıyla en yakındaki adama saldırır, ölümcül bir savaşı başlatır.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) Fedakarlık",
+                            nextSceneId: "scene_25"
+                        ),
+                        StoryChoice(
+                            text: "B) İsyan",
+                            nextSceneId: "scene_26"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_23",
+                    title: "A) Karantina",
+                    content: """"6. TUR VE FİNAL" Saatler, günler geçer. Dışarıdaki serpinti azalır ama içerideki delilik artar. Yiyecek ve su tükenir. Bağlı olan Cem, sonunda açlık ve krizin birleşiminden sessizce can verir. Bir süre sonra Selin, klostrofobi ve umutsuzluktan aklını yitirir ve taş kapıyı açmaya çalışır. İsmail onu engellemeye çalışırken aralarında çıkan arbede, Dr. Altan'ı bir karar vermeye zorlar. Bu mezardan sadece bir kişi canlı çıkabilir. Zayıf anlarını kollar ve ikisini de ortadan kaldırır. Tek başına, ama akıl sağlığının sınırında, dışarıdaki yeni dünyaya adım atar. "BİR KİŞİ HAYATTA KALDI: Dr. Altan. Oyun Bitti."""",
+                    choices: [],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_24",
+                    title: "B) Ayıklama",
+                    content: """"FİNAL " İsmail, Dr. Altan'ın emrini tereddütsüzce yerine getirir ve Cem'in acısına son verir. Artık üç kişilerdir: Bir bilim insanı, bir para aklayıcı ve onların celladı. Bu yeni ve korkunç denge, onları bir arada tutar. Günler sonra serpinti azaldığında dışarı çıkarlar. Birbirlerine güvenir gibi yaparlar ama her biri diğerinin arkasını kolladığı an onu yok etmeye hazırdır. Hayattadırlar, ama artık birer canavardır. " ÜÇ KİŞİ HAYATTA KALDI: Dr. Altan, İsmail, Selin. Oyun Bitti."""",
+                    choices: [],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_25",
+                    title: "A) Fedakarlık",
+                    content: """İsmail ve Peder, Altan'ın soğuk mantığını isteksizce kabul ederler. Selin, yalvarışları ve çığlıkları arasında diğer grup tarafından zorla alınır. Karşılığında, grubun geri kalanının manastırın başka bir bölümünde "misafir" edilmesine izin verilir. Hayattadırlar, ama her gece Selin'in çığlıklarını duyarak, hayatta kalmak için ödedikleri korkunç bedelle yaşamak zorundadırlar. Onlar artık kurtulan değil, işbirlikçidir. "ÜÇ KİŞİ HAYATTA KALDI: Dr. Altan, İsmail, Peder Elvan (ama insanlıklarını kaybettiler). Oyun Bitti."""",
+                    choices: [],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_26",
+                    title: "B) İsyan",
+                    content: """İsmail'in saldırısıyla manastırın sessizliği, çığlıklar ve etin kemikten ayrılma sesiyle yırtılır. Bu, hayatta kalmanın en ilkel kuralıdır: Öldür ya da öl. İsmail, iki kişiyi vahşice öldürür ama üçüncüden ölümcül bir yara alır. Dr. Altan, kaosun ortasında kendini korumaya çalışırken, Selin panik içinde kaçmaya çalışırken sırtından bıçaklanır. Savaş bittiğinde, Peder Elvan, ölmek üzere olan son yabancının başında durur. Etrafı cesetlerle çevrilidir. Manastır artık onundur, ama içerideki tek canlı odur. " BİR KİŞİ HAYATTA KALDI: Peder Elvan. Oyun Bitti."""",
+                    choices: [],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_27",
+                    title: "A) Pederi öne sür.",
+                    content: """İsmail, Peder'i kaba bir hareketle merdivenlerin başına itti. "Yürü, papaz!" Peder, titreyerek ve dualar mırıldanarak aşağı inmeye başladı. Her adımda arkasını dönüp gruba yalvaran gözlerle bakıyordu. Dar koridora girdiklerinde, Peder aniden durdu. "İlerisi... İlerisi çıkmaz sokak. Geri dönmeliyiz." "Yalan söylüyorsun!" diye kükredi İsmail ve onu ileri itti. Peder, dengesini kaybedip birkaç adım sendeledi. Ayağı, yerdeki farklı bir taşa bastı. Bir "klik" sesi duyuldu ve tam yanlarındaki duvardan, paslı oklar fırlatan bir mekanizma ateşlendi. Peder, çığlık atarak kendini yere attı. Oklar onun üzerinden geçip tam arkasındaki Cem'in boğazına ve göğsüne saplandı. Cem, tek bir ses bile çıkaramadan, şaşkın bir ifadeyle yere yığıldı. Gözleri açık kalmıştı. CEM ÖLDÜ. Peder, yerde tir tir titriyordu. "Sizi uyarmıştım," diye ağladı. "Bu mezar, davetsiz misafirleri affetmez." "Şimdi 4. Tur'a geçeceksiniz. Grubun en zayıf halkası öldü. Peder'in bilgisine artık mecburen güvenmek zorundalar, çünkü katakompların gerçekten de ölümcül olduğunu öğrendiler. """",
+                    choices: [
+                        StoryChoice(
+                            text: "4.Tur Günah Keçisi ve Rehber",
+                            nextSceneId: "scene_29"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_28",
+                    title: "B) Kapıyı tekrar kilitle.",
+                    content: """Dr. Altan, "Hayır," dedi kararlılıkla. "Aşağıda ne olduğunu bilmiyoruz. Bu adamın yalan söyleyip söylemediğini de. Bilinmeyen bir tehlike, bilinen bir tehlikeden daha kötüdür." İsmail'in itirazlarına rağmen kapıyı tekrar kapattılar ve Peder'in verdiği anahtarla kilitlediler. Peder, bu karardan rahatlamış görünüyordu. "Madem o kapıyı biliyordun," dedi Dr. Altan, Peder'in üzerine yürüyerek. "Bu katedralin başka hangi sırlarını biliyorsun? Başka bir çıkış var mı?" Peder yutkundu. "Var... Ama orası da en az katakomplar kadar tehlikeli." "Neresi?" "Çan kulesi. Katedralin çatısına, oradan da bitişikteki manastırın çatısına bir geçit olması gerekiyor. Ama kule merdivenleri çok eski ve çürük. Patlama sırasında hasar görmüş olabilir." Grup, yeni bir umut ama aynı zamanda yeni bir riskle karşı karşıyaydı. Ya çürük merdivenlerde sıkışıp kalacaklar ya da zehirli gökyüzüne daha da yaklaşacaklardı. "Şimdi 4. Tur'a geçeceksiniz. Mahzen yolunu reddettiniz ve şimdi önünüzde daha riskli görünen dikey bir kaçış planı var: Çan Kulesi. """",
+                    choices: [
+                        StoryChoice(
+                            text: "4.Tur Çan Kulesi",
+                            nextSceneId: "scene_32"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_29",
+                    title: "4.Tur Günah Keçisi ve Rehber",
+                    content: """"4. TUR: GÜNAH KEÇİSİ VE REHBER" Cem’in cansız bedeninden sızan kan, yerdeki toza karışıp çamura dönerken, koridordaki sessizliği Peder’in titrek nefesleri bozuyordu. İsmail’in kibri, yerini isteksiz bir kabullenişe bırakmıştı. Bu yaşlı adam, bir sahtekâr olabilirdi ama aynı zamanda bu labirentten tek çıkış biletleriydi. "Ne yapacağız şimdi?" diye sordu Selin, sesi Cem'in cesedine bakmaktan boğuklaşmıştı. Peder Elvan, yerden destek alarak ayağa kalktı. "Bu yolun sonu ölüm. Sizi uyardım. Geri dönüp bildiğim diğer geçidi denemeliyiz. Daha uzun ama... en azından tuzaklı değil." İsmail, Peder'in yakasına yapışmaktan son anda kendini alıkoydu. "Geri dönmek mi? O kadar yolu boşuna mı geldik?" diye hırladı. "Tuzak patladı işte! Artık yol temizlenmiş olmalı. İlerliyoruz!"Dr. Altan, iki ateş arasında kalmıştı. Peder'in kanıtlanmış bilgisine mi güveneceklerdi, yoksa İsmail'in zaman kazandıracak ama ölümcül olabilecek riskine mi? Seçiminiz nedir? "A) İsmail'in Riskini Al: "Tuzağın artık etkisiz olduğuna inanıp Peder'in "çıkmaz sokak" uyarısını görmezden gelecekler. Koridorda ilerlemeye devam edecekler. Seçiminiz nedir? "B) Peder'in Rehberliğine Güven:" Bu tecrübeden ders çıkarıp Peder'in sözünü dinleyecekler. Cem'in cesedini geride bırakıp, geldikleri yoldan geri dönecek ve Peder'in bildiği alternatif, daha güvenli rotayı deneyecekler.""",
+                    choices: []
+    ),
+                StoryScene(
+                    id: "scene_30",
+                    title: "A) İsmail'in riskini al.",
+                    content: """"5. TUR: UÇURUMUN KENARINDAKİ HESAPLAŞMA" "Yürü Peder!" diye emretti İsmail. Grup, Cem'in cesedini aşıp, artık tekinsiz bir sessizliğe bürünmüş koridorda ilerlemeye devam etti. Peder'in "çıkmaz sokak" dediği yer, aslında çok daha kötüydü: Bir çöküntü. Koridor, nükleer patlamanın yarattığı yaklaşık on metrelik bir uçurumla aniden son buluyordu. Aşağısı, dipsiz bir karanlıktı. "İşte bu senin çıkmaz sokağın!" diye bağırdı İsmail öfkeyle, ama sözleri boşlukta kayboldu. Geri dönmekten başka çareleri yoktu. Ancak tam o anda, artçı bir sarsıntı daha tüneli titretti. Ayaklarının altındaki zemin dalgalanıyordu. En arkada duran ve dehşet içinde aşağıya bakan Selin, dengesini kaybederek tiz bir çığlık attı. Dr. Altan onu yakalamak için atıldı ama parmakları Selin'in parmak uçlarını sıyırıp geçti. Selin, karanlık uçuruma doğru düşerek gözden kayboldu. "SELİN ÖLDÜ." Şimdi üç kişi kalmışlardı: Dr. Altan, İsmail ve Peder. Ve geldikleri yol, her an tamamen çökebilecek bir ölüm tuzağına dönüşmüştü. Dr. Altan'ın İsmail'e yönelttiği bakışlar, artık sadece bir fikir ayrılığı değil, saf bir nefret içeriyordu. Seçiminiz nedir?: "A) Hesaplaşma: "Dr. Altan, Selin'in ölümüyle kontrolünü kaybeder. "BU SENİN SUÇUN, İSMAİL!" diye bağırır. "SENİN APTAL KİBRİN ONU ÖLDÜRDÜ!" Bu suçlama, uçurumun kenarında ölümcül bir kavgayı tetikler. "B) Soğukkanlı Geri Çekilme: "Peder Elvan araya girer. "Durun! Birbirimizi öldürmenin sırası değil! Sakin kalırsak buradan canlı çıkarız!" Dr. Altan ve İsmail, ortak düşmanlarının "kader" olduğuna karar verip, aralarındaki nefreti yutarak, çöken yolda dikkatlice geri çekilmeye çalışırlar.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) Hesaplaşma",
+                            nextSceneId: "scene_69"
+                        ),
+                        StoryChoice(
+                            text: "B) Soğukkanlı Geri Çekilme",
+                            nextSceneId: "scene_70"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_31",
+                    title: "B) Peder'in rehberliğine güven.",
+                    content: """"5. TUR: ET VE KEMİK" Peder'in rehberliğinde yaklaşık on beş dakika boyunca dar ve nemli tünellerden ilerlediler. Sonunda, tavanından suların damladığı, ortasından diz boyu bir su birikintisinin geçtiği daha geniş bir mahzene ulaştılar. Karşıya geçmek zorundaydılar ama suyun içi zifiri karanlıktı ve dibinde ne olduğu belli değildi. "Su çok soğuk ve akıntı olabilir," dedi Dr. Altan. "Birbirimize tutunarak geçmeliyiz." İsmail ise bu fikre karşı çıktı. "Saçmalık. Teker teker geçeriz. Ben ilk gidip karşıya bir ip bağlarım." Peder'in cübbesinden yırttığı uzun kumaş şeritlerini birbirine bağlıyordu. İki farklı plan, iki farklı risk. Biri takım çalışmasına, diğeri bireysel güce dayanıyordu. Seçiminiz nedir? "A) Teker Teker Geçiş: "İsmail'in planını uygulayacaklar. İsmail, ipin bir ucunu alıp karşıya geçmeye çalışacak, ardından diğerleri ipi kullanarak onu takip edecek. "B) İnsan Zinciri:" Dr. Altan'ın planını uygulayıp, en güçlü olan İsmail'in liderliğinde el ele tutuşarak bir zincir oluşturacak ve suyu birlikte geçmeye çalışacaklar.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) Teker Teker Geçiş",
+                            nextSceneId: "scene_67"
+                        ),
+                        StoryChoice(
+                            text: "B) İnsan Zinciri",
+                            nextSceneId: "scene_68"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_32",
+                    title: "4.Tur Çan Kulesi",
+                    content: """"4. TUR : ÇAN KULESİ" Çan kulesinin dibindeki spiral merdivenler, bir iskelet gibi yukarıya doğru uzanıyordu. Birçok basamak çatlamış, bazıları tamamen yok olmuştu. Herhangi bir rüzgârda sallanan yapı, güven vermekten çok uzaktı. "Bu bir intihar," dedi Selin, yukarıdaki karanlığa bakarak. "Katedralde beklemek de öyle," diye karşılık verdi Dr. Altan. "Bir karar vermeliyiz. Ya hep birlikte deneriz ya da tek tek yollarız." İsmail, "En hafif olan ilk gitsin," dedi, gözleri Selin'e dönerek. "Eğer o geçebilirse, hepimiz geçeriz." Bu mantıklı ama bir o kadar da acımasız bir öneriydi. Selin'i bir yem olarak kullanmak, grubun geldiği son noktayı gösteriyordu. Seçiminiz nedir? "A) Birlikte Tırmanış:" Riski paylaşacaklar. İsmail en önden giderek çürük basamakları test edecek, diğerleri dikkatlice, aralarında mesafe bırakarak onu takip edecek. "B) Selin'i Yem Olarak Kullan: "İsmail'in acımasız mantığını kabul edip, en hafif olduğu için Selin'i önden gönderecekler. Merdivenlerin sağlamlığını onun hayatı üzerinden test edecekler.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) Birlikte Tırmanış",
+                            nextSceneId: "scene_33"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_33",
+                    title: "A) Birlikte Tırmanış",
+                    content: """İsmail önde, diğerleri arkada, dikkatle tırmanmaya başlarlar. İsmail'in ağırlığı birkaç basamağı kırar ama o, gücünü kullanarak kendini yukarı çekmeyi başarır. Grup, tehlikeli tırmanışın ardından çanların olduğu platforma ulaşır. Buradan, bitişikteki manastırın çatısına yaklaşık üç metrelik bir boşluk vardır. Aşağısı ise ölümdür. Atlamaktan başka çareleri yoktur. "Ben önce atlarım," der İsmail. "Sonra size yardım ederim." İsmail gerilir ve karşı çatıya başarılı bir şekilde atlar. Ancak atlayışının yarattığı sarsıntı, durdukları eski platformu zayıflatır. Onlar atlamaya hazırlanırken, Peder Elvan'ın bastığı kenar çöker. "PEDER ELVAN ÖLDÜ." Peder, kısa bir çığlıkla boşluğa düşer. "Yeni Durum: Peder öldü. İsmail karşı çatıda, Dr. Altan, Selin ve Cem ise çökmek üzere olan bir platformda mahsur kaldı. Aralarında üç metrelik bir uçurum var. """",
+                    choices: [
+                        StoryChoice(
+                            text: "6.Tur Uçurumun Kenarında",
+                            nextSceneId: "scene_37"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_34",
+                    title: "B) Selin'i yem olarak kullan.",
+                    content: """"5. TUR" Selin, diğerlerinin baskısıyla titreyerek tırmanmaya başlar. Her adımda ahşap gıcırdar. Yaklaşık on beş metre tırmandıktan sonra, bastığı basamak çatlar. Selin çığlık atarak dengesini kaybeder. Aşağı düşerken İsmail onu yakalamak için bir hamle yapar ama başaramaz. Selin, kulenin taş zeminine çarparak can verir. "SELİN ÖLDÜ." Onun ölümüyle sonuçlanan tırmanışı, merdivenlerin ne kadar tehlikeli olduğunu kanıtlamıştır. Bu yol artık bir seçenek değildir. "Yeni Durum: Selin'in ölümüyle hem bir üyelerini hem de tek kaçış planlarını kaybettiler. Çan kulesinin dibinde, tekrar başa döndüler" Seçiminiz: "A)" Dr. Altan, Peder'i tekrar sıkıştırır: "Başka bir yol daha olmalı! Bildiğin her şeyi anlat!" "B)" Grup tamamen dağılır. İsmail, öfkeyle enkazı yumruklamaya başlarken, diğerleri katedralin farklı köşelerine çaresizlik içinde çekilir.""",
+                    choices: [
+                        StoryChoice(
+                            text: "B) Dağılın.",
+                            nextSceneId: "scene_35"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_35",
+                    title: "B) Dağılın.",
+                    content: """Artık grup diye bir şey yoktu. Sadece aynı cehennemi paylaşan yabancılar vardı. İsmail, anlamsız bir öfkeyle ana kapıdaki enkazı temizlemeye çalışıyordu. Peder, sunağın önünde diz çökmüş, kaderini bekliyordu. Cem, uyuşturucu krizinin en derin noktasında, acısını dindirecek bir şeyler bulma umuduyla Peder'in odasına sığınmıştı. Dr. Altan ise mantığının sesini dinledi. Bu delilikten uzaklaşmalıydı. Katedralin yapısını incelediğinde, en sağlam yerin çan kulesinin altındaki, kalın duvarlarla örülmüş, küçük ve penceresiz zangoç odası olduğuna karar verdi. Orası, ana yapıdan neredeyse bağımsızdı. Sessizce oraya çekilip kapıyı arkasından kapattı. Kendince en güvenli yeri seçmişti. Felaket, İsmail'in enkaz yığınına indirdiği son bir darbeyle geldi. Bu sarsıntı, ana kemeri çökertti ve katedralin tavanı bir bütün olarak içeri göçtü. İsmail ve Peder, ana salonda oldukları için anında tonlarca enkazın altında kalarak can verdiler. "İSMAİL ÖLDÜ. PEDER ELVAN ÖLDÜ." Dr. Altan, sığındığı odanın içinde sarsıntıyı hissetti. Ancak hesaplayamadığı bir şey vardı: Çan kulesi. Ana yapı çökünce, kule dengesini kaybetti ve dev bir ağaç gibi, tam da Altan'ın sığındığı odanın üzerine devrildi. Binlerce kiloluk çanlar ve taş bloklar, Altan'ın "güvenli sığınağını" bir an içinde ezerek onu bir mezara hapsetti. Mantığı, onu ölüme götüren şey olmuştu. "DR. ALTAN ÖLDÜ." Gürültü ve kaosun ortasında, tek bir yer ayakta kalmıştı. Peder'in odası. Cem, aradığı uyuşturucuyu bulamayınca, ayin şarabını içerek kendinden geçmiş, odanın köşesindeki ağır meşe dolabın içine sızmıştı. Katedral çökerken, odanın tavanı da çöktü, ama devasa ve sağlam dolap, bir kalkan görevi görerek onu korudu. Saatler sonra, toz bulutunun içinde, kırık bir dolabın kapağı gıcırtıyla aralandı. Cem, dışarıya, yeni ve sessiz dünyasına adım attı. Etrafında sadece enkaz ve ölüler vardı. "BİR KİŞİ HAYATTA KALDI: Cem. Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_36",
+                    title: "A) Peder'i sıkıştırın.",
+                    content: """Dr. Altan, dağılan grubun umutsuzluğunu bir kenara itti. Rasyonalitesi, onu son bir bilgi kırıntısına yönlendirdi. Peder Elvan'ı cübbesinden yakalayıp Selin'in cesedinden uzağa, loş bir köşeye sürükledi. "Yalan söyledin," diye tısladı Altan, yüzü Peder'in yüzüne sadece birkaç santim uzaktaydı. "O kule tek yol değildi. Bu enkazın içinde başka bir sır daha var. Söylemezsen, yemin ederim seni İsmail'in öfkesinin önüne atarım." Peder, tamamen kırılmış bir halde başını salladı. "Vaftiz kurnası... Altı sarnıca açılır. Eski bir kaçış tüneli..." Ancak bu gizli konuşma, İsmail'in dikkatinden kaçmadı. Yumrukladığı enkazı bırakıp onlara doğru yürüdü. "YİNE NE İŞLER ÇEVİRİYORSUNUZ?" diye kükredi. Gözleri kan çanağına dönmüştü. Selin'in ölümünden herkesi sorumlu tutuyordu. Dr. Altan, İsmail'in üzerlerine geldiğini görünce ölümcül bir hata yaptı. Peder'i korumak ve zaman kazanmak için İsmail'in önüne geçti. "Dur İsmail! Senin kibrin hepimizi öldürecek!" diye bağırdı. Bu, ateşe benzin dökmek gibiydi. İsmail, tüm öfkesini ve gücünü Dr. Altan'a yönelterek ona saldırdı. İkisinin şiddetli boğuşması, onları patlamanın zayıflattığı ana sütunlardan birinin dibine taşıdı. Peder, dehşet içinde vaftiz kurnasına doğru geri çekilirken, Cem ise krizin etkisiyle bir köşede büzülmüştü. İsmail'in Altan'ı sütuna son bir kez daha vuruşu, yapının dayanabileceği son noktaydı. Devasa taş sütun, korkunç bir gıcırtıyla çatladı ve tavanın o bölümü doğrudan boğuşan ikilinin üzerine çöktü. "DR. ALTAN ÖLDÜ. İSMAİL ÖLDÜ." Peder, son anda kendini kurnanın arkasına atarak kurtuldu. Toz bulutu dağıldığında, katedralin ortasında yeni bir enkaz yığını ve iki ceset vardı. Diğer köşede ise Cem, olan biteni travma içinde izlemişti. İki farklı köşede, iki yalnız adam, bu devasa mezarda hayatta kalmışlardı. "İKİ KİŞİ HAYATTA KALDI: Peder Elvan, Cem. Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_37",
+                    title: "6.Tur Uçurumun Kenarında",
+                    content: """"6. TUR: UÇURUMUN KENARINDA" Peder'in boşluğa düşerkenki son çığlığı, rüzgârın uğultusuna karışıp kayboldu. Altlarındaki platform, İsmail'in atlayışının yarattığı sarsıntıyla tehlikeli bir şekilde gıcırdıyor, kenarlarından taş parçaları dökülüyordu. Üç metrelik boşluk, bir okyanus kadar geniş ve aşılmaz görünüyordu. Karşı taraftaki İsmail, çaresizce onlara bakıyordu. "Bir şey yapmalıyız!" diye bağırdı. "Orası çökecek!" Dr. Altan, soğukkanlılığını korumaya çalışarak seçenekleri tartıyordu. Selin, korkuyla platformun merkezine sinmişti. Cem ise titreyen elleriyle duvara tutunuyor, her an dengesini kaybedecek gibi duruyordu. Zamanları saniyelerle ölçülüyordu. Seçiminiz nedir?: "A) İsmail'in Köprüsü: "İsmail'in kaba kuvvetine güvenecekler. İsmail, karşı çatıdan sökebileceği uzun bir ahşap kiriş veya metal bir parça bularak iki taraf arasında derme çatma bir köprü kurmaya çalışacak. Bu, zaman alacak ama en güvenli geçiş yolu olabilir. "B) İnanç Sıçrayışı:" Beklemenin ölüm olduğuna karar verecekler. Dr. Altan'ın komutuyla, teker teker karşı çatıya atlamayı deneyecekler. Bu en hızlı yöntem, ama herkesin bu atlayışı başarma garantisi yok.""",
+                    choices: [
+                        StoryChoice(
+                            text: "B) İnanç Sıçrayışı",
+                            nextSceneId: "scene_39"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_38",
+                    title: "A) İsmail'in Köprüsü",
+                    content: """"7. TUR VE FİNAL: SON ADIMLAR" Selin’in çığlığı boşlukta kaybolurken, kullandıkları derme çatma köprü de onunla birlikte düşmüştü. Artık İsmail ve Dr. Altan manastırın çatısında güvendeydi, ama Cem, altındaki zemin her an çökebilecek şekilde karşı tarafta tek başına kalmıştı. Aralarındaki boşluk, şimdi daha da umutsuz bir hal almıştı. "Onu orada bırakamayız!" diye bağırdı İsmail, beklenmedik bir vicdan azabıyla. Dr. Altan ise durumu buz gibi bir mantıkla değerlendiriyordu. Cem bir yüktü. Bir bağımlıydı. Ve onu kurtarmaya çalışmak, kendi hayatlarını riske atmak demekti. Son Seçiminiz: "A) Umutsuz Kurtarma: "İsmail, Altan'ı dinlemez. Kemerlerini ve ceketlerini birbirine bağlayarak ilkel bir ip yapar. "Bana yardım et, onu yukarı çekeceğiz!" diyerek ipi Cem'e doğru fırlatır. "B) Soğuk Mantık: "Dr. Altan, İsmail'i ikna eder. "Bitti İsmail. Onun için yapabileceğimiz bir şey yok. Kendimizi kurtarmalıyız." Cem'i kaderine terk edip, manastırın çatısından aşağıya inen bir yol aramaya başlarlar.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) Umutsuz Kurtarma",
+                            nextSceneId: "scene_40"
+                        ),
+                        StoryChoice(
+                            text: "B) Soğuk Mantık",
+                            nextSceneId: "scene_41"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_39",
+                    title: "B) İnanç Sıçrayışı",
+                    content: """Cem'in düşüşü, zaferlerini anında bir trajediye çevirmişti. Üçü de nefes nefese, manastırın çatısında duruyorlardı. Katedralden kaçmışlardı, en azından şimdilik güvendeydiler. Ama etraflarındaki dünya hala bir cehennemdi. Ufukta nükleer patlamaların dumanı tütüyor, hava radyoaktif kül kokuyordu. "Şimdi ne yapacağız?" dedi Selin, sesi titriyordu. "Burada sonsuza kadar kalamayız." İsmail, çatının kenarından aşağıdaki sokağa baktı. "Bir yolunu bulup aşağı inmeliyiz." Dr. Altan ise onları durdurdu. "Acele etmeyin. Aşağısı içeriden daha tehlikeli olabilir. Önce gözlemleyelim. Belki de beklemek en güvenlisidir." Son Seçiminiz: "A) Bekle ve Gözlemle:" Dr. Altan'ın temkinli planına uyacaklar. Çatıda güvenli bir köşe bulup saklanacak, aşağıdaki durumu ve olası tehlikeleri gözlemleyerek doğru anı bekleyecekler. "B) Harekete Geç: "İsmail'in sabırsızlığına katılacaklar. Beklemenin zaman kaybı olduğuna karar verip, manastırın duvarından aşağı inen eski bir yangın merdivenini veya sarmaşıkları kullanarak hemen aşağıya inmeye çalışacaklar.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) Bekle ve Gözlemle",
+                            nextSceneId: "scene_42"
+                        ),
+                        StoryChoice(
+                            text: "B) Harekete Geç",
+                            nextSceneId: "scene_43"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_40",
+                    title: "A) Umutsuz Kurtarma",
+                    content: """Cem, titreyen elleriyle ipi yakalar. İsmail ve Altan, tüm güçleriyle onu çekmeye başlarlar. Ancak Cem'in ağırlığı ve paniği, zaten zayıf olan çatı kenarına çok fazla yük bindirir. Tam Cem'i yukarı çekmek üzerelerken, İsmail'in bastığı kiremitler kayar ve çatı kenarı çöker. İsmail, Cem'i bırakmayarak onunla birlikte boşluğa sürüklenir. Dr. Altan son anda geriye atlayarak kendini kurtarır. "BİR KİŞİ HAYATTA KALDI: Dr. Altan. Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_41",
+                    title: "B) Soğuk Mantık",
+                    content: """İsmail, bir an tereddüt etse de Altan'ın acımasız mantığına boyun eğer. Arkalarını dönüp Cem'i orada bıraktıkları an, platform korkunç bir gürültüyle çöker. Cem'in son çığlığı, aldıkları kararın vicdanlarına kazınır. Dr. Altan ve İsmail, bu günahın yüküyle manastırın içlerine doğru ilerlerler. Hayattadırlar, ama insanlıklarının bir parçasını o çatıda bırakmışlardır. " İKİ KİŞİ HAYATTA KALDI: Dr. Altan, İsmail. Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_42",
+                    title: "A) Bekle ve Gözlemle",
+                    content: """Grup, bir baca oyuğuna sığınarak beklemeye başlar. Ancak hesap edemedikleri bir şey vardır: Fallout (Nükleer Serpinti). İlk patlamadan saatler sonra, rüzgâr yön değiştirir ve gözle görülmeyen, ölümcül radyoaktif parçacıklar yağmur gibi üzerlerine yağmaya başlar. İlk başta sadece hafif bir mide bulantısı ve baş dönmesi hissederler. Saatler geçtikçe durumları kötüleşir. Sığındıkları çatı, onların sessiz ve yavaş mezarı olur. Birkaç gün içinde, radyasyon zehirlenmesinden, acı içinde teker teker can verirler. "HERKES ÖLDÜ. Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_43",
+                    title: "B) Harekete Geç",
+                    content: """Manastırın arkasındaki eski ve paslı yangın merdivenine ulaşırlar. İsmail en önden inmeye başlar. Merdiven gıcırdar ama ağırlığını taşır. Ardından Altan ve Selin de onu takip eder. Başarıyla, terk edilmiş bir ara sokağa inmeyi başarırlar. Etrafta kimse yoktur. Hayattadırlar, birliktedirler ve önlerinde, hayatta kalmak için savaşacakları, kıyamet sonrası yeni bir dünya uzanmaktadır. "ÜÇ KİŞİ HAYATTA KALDI: Dr. Altan, İsmail, Selin. Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_44",
+                    title: "5.Tur Mezardaki Sessizlik",
+                    content: """"5. TUR: MEZARDAKİ SESSİZLİK" Kapı, Selin'in ezilmiş bedeniyle birlikte sonsuza dek mühürlenmişti. Koridor, artık bir geçit değil, bir mezar odasıydı. İsmail ve Selin'in kanının metalik kokusu, küf ve çürümüşlük kokusuna karışarak havayı nefes alınmaz hale getirmişti. Bu daracık alanda, yaşayan üç adam, ölülerden daha fazla yer kaplıyordu. Cem, gördüğü dehşetle aklını yitirmenin sınırındaydı. Bir köşeye sinmiş, anlamsızca bir şeyler mırıldanıyordu. Peder Elvan, elindeki haçı göğsüne bastırıyor, titrek dudaklarıyla dualar ediyordu. Seçiminiz nedir?: "A) Geriye Dönüş ve Yüzleşme: "Dr. Altan, yaşayanları toparlar. "Burada kalamayız. Geri dönüyoruz," der. Katedralin ana salonuna geri dönerek durumu yeniden değerlendirecekler. Bu, Cem'in artan deliliğiyle daha geniş bir alanda yüzleşmek anlamına gelir. "B) Deliliğin Tetiği: "Cem, aniden Peder Elvan'ın üzerine atılır. "Bu senin suçun! Senin duaların işe yaramıyor! Bize yalan söyledin!" diye bağırır. Yoksunluk krizi ve travma, onu şiddete iter. Dr. Altan, bu daracık alanda bir can pazarına dönüşen kavgayı ayırmak zorundadır.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) Geriye Dönüş ve Yüzleşme",
+                            nextSceneId: "scene_45"
+                        ),
+                        StoryChoice(
+                            text: "B) Deliliğin Tetiği",
+                            nextSceneId: "scene_46"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_45",
+                    title: "A) Geriye Dönüş ve Yüzleşme",
+                    content: """"6. TUR VE FİNAL: SON GÜNAHLAR" İki cesedi ve başarısız bir kaçış planını arkalarında bırakarak katedralin loşluğuna geri döndüler. Ancak bu geri dönüş bir rahatlama getirmedi. Katedral artık bir sığınak değil, başarısızlıklarının ve kayıplarının bir anıtıydı. Cem'in durumu her geçen dakika kötüleşiyordu. Selin'in son çığlıklarını taklit ediyor, İsmail'in cesedinin nasıl ikiye ayrıldığını anlatarak kahkahalar atıyordu. Dr. Altan ve Peder, bu deliliğin bulaşıcı olduğunu ve bir sonraki kurbanın kendileri olabileceğini biliyorlardı. "Onun için yapabileceğimiz bir şey yok," dedi Peder, sesi yorgundu. "Tanrı ruhuna merhamet etsin." Dr. Altan ise daha pratik düşünüyordu. "Onu bu halde bırakamayız. Ya onu kontrol altına alacağız ya da..." Cümlesini bitirmedi ama anlamı açıktı. Son Seçiminiz : "A) Merhametin Sonu: "Dr. Altan ve Peder, Cem'in artık kurtarılamayacak bir tehdit olduğuna karar verirler. Ona "sakinleşmesi için" Peder'in odasından getirdikleri, yüksek dozda uyuşturucu katılmış bir miktar su verirler. "B) Son Umut: "Peder, bir can daha almayı reddeder. "Onu bağlayalım," der. "Krizini atlatana kadar onu bir yere kapatalım." Dr. Altan, riskli de olsa bu plana uyar.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) Merhametin Sonu",
+                            nextSceneId: "scene_47"
+                        ),
+                        StoryChoice(
+                            text: "B) Son Umut",
+                            nextSceneId: "scene_48"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_46",
+                    title: "B) Deliliğin Tetiği",
+                    content: """Daracık koridor, bir can pazarına dönmüştü. Cem, krizin verdiği vahşi bir güçle Peder'i boğmaya çalışıyordu. Dr. Altan, onları ayırmak için araya girdiğinde, boğuşan üç beden dengesini kaybetti ve tam da Selin'in altında ezildiği demir kapının üzerine yığıldı. Bu beklenmedik ve şiddetli ağırlık, kapıyı tutan mekanizmada bir şeyi tetikledi. Bir "klik" sesi daha duyuldu. Ama bu sefer kapı aşağı inmedi. Yukarıdan, tavandan, daha önce fark etmedikleri küçük bir kapak açıldı ve içinden kum ve çakıl akmaya başladı. Tuzak, sadece aşağıya doğru işlemiyordu; aynı zamanda odayı diri diri gömmek için tasarlanmış ikinci bir mekanizmaya sahipti. Kum, önce ayak bileklerine, sonra dizlerine kadar yükseldi. Kaçacak yer yoktu. Son Seçiminiz : "A) Birlikte Gömülüş: "Üçü de paniğe kapılır. Birbirlerini ittirerek, tırmanarak kumdan kurtulmaya çalışırlar ama bu sadece daha hızlı batmalarına neden olur. Kaderlerini kabul edip, birlikte bu kumdan mezara gömülürler. "B) Bir Kurban:" Dr. Altan, son bir acımasız hamle yapar. Peder ve Cem'i aşağıya doğru iterek onların bedenlerini bir basamak gibi kullanır ve tavanın kenarındaki bir çıkıntıya tutunmaya çalışır.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) Birlikte Gömülüş",
+                            nextSceneId: "scene_49"
+                        ),
+                        StoryChoice(
+                            text: "B) Bir Kurban",
+                            nextSceneId: "scene_50"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_47",
+                    title: "A) Merhametin Sonu",
+                    content: """Cem, suyu içtikten birkaç dakika sonra sessizleşir ve bir daha uyanmamak üzere uykuya dalar. CEM ÖLDÜ. Artık iki kişi kalmışlardır. Dr. Altan ve Peder, katedralin sessizliğinde baş başadır. Birbirlerine güvenir gibi yaparlar ama ikisi de bilir ki, bu cehennemde hayatta kalmak için gerekirse diğerini feda edecektir. Yeni ve daha tekinsiz bir bekleyiş başlar. "İKİ KİŞİ HAYATTA KALDI: Dr. Altan, Peder Elvan. Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_48",
+                    title: "B) Son Umut",
+                    content: """Cem'i, Peder'in odasına kilitlemeyi başarırlar. Ancak birkaç saat sonra, Cem'in içeriden gelen çığlıkları ve duvara vurma sesleri, zaten zayıf olan yapıyı tetikler. Peder'in odasının tavanı çöker ve Cem'i altında bırakır. "CEM ÖLDÜ. " Bu çöküş, katedralin diğer bölümlerinde de bir zincirleme reaksiyona neden olur. Dr. Altan ve Peder, kaçmaya çalışırken ana salonun çökmesiyle enkazın altında kalırlar. "HERKES ÖLDÜ. Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_49",
+                    title: "A) Birlikte Gömülüş",
+                    content: """Kum, acımasızca yükselmeye devam eder. Son anlarında, Peder dua eder, Cem annesine seslenir, Altan ise sadece sessizce tavana bakar. Birbirlerine olan nefretleri, ortak bir kaderin altında eriyip gider. Koridor, üç yeni cesetle birlikte sonsuza dek mühürlenir. "HERKES ÖLDÜ. Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_50",
+                    title: "B) Bir Kurban",
+                    content: """Dr. Altan, diğer ikisinin üzerinde yükselerek tavandaki bir çıkıntıya tutunmayı başarır. Peder ve Cem, kumun içinde boğularak can verirler. CEM ÖLDÜ. PEDER ELVAN ÖLDÜ. Altan, tek başına, tavana tutunmuş bir halde kalır. Ancak kollarındaki güç sonsuza dek sürmez. Saatler sonra, yorgunluğa yenik düşer ve tutuşunu kaybederek, yoldaşlarının mezarı olan kum yığınının üzerine düşer. "BİR KİŞİ HAYATTA KALDI... ama o da öldü. Nihai Sonuç: HERKES ÖLDÜ. Oyun Bitti"""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_51",
+                    title: "A) Cem'i bir odaya kapatalım.",
+                    content: """Cem'i bir odaya kilitleyip çığlıklarını bastırdıktan sonra ağır bir sessizlik çöktü. Grup, bir üyesini feda etmenin getirdiği vicdani yük ve gerilimle birbirine bakıyordu. Selin titriyor, Peder Elvan ise dualar mırıldanıyordu. Tam o sırada, Cem'in kilitli olduğu odadan önce bir gümbürtü, ardından tiz bir cam kırılma sesi geldi. Herkes donakaldı. Odanın penceresi yoktu. Sesin kaynağı bir muammaydı. İsmail, "Ne halt ediyor bu velet?" diye homurdandı. Dr. Altan'ın yüzü endişeliydi. "Bu normal bir ses değil. Kendine zarar vermiş olabilir ya da... başka bir şey oldu." Selin dehşet içinde fısıldadı: "Ya onu orada öylece bırakırsak... Ya ölürse?" Kapının arkasındaki bilinmezlik, dışarıdaki nükleer felaket kadar korkutucu gelmeye başlamıştı. "4. TUR : KAPININ ARDINDAKİ DEHŞET" Cem'i kapattığınız odadan gelen sesler, bir karar vermenizi gerektiriyor. Merak ve vicdan, korku ve pragmatizmle savaşıyor. Seçiminiz nedir? "A) Sesi görmezden gelelim." Kendi sorununu kendi çözsün. Kapıyı açmak, kontrolünü kaybetmiş birini veya bilmediğimiz bir tehlikeyi serbest bırakmak olabilir. Kendi güvenliğimiz önceliklidir. "B) Kapıyı açıp ne olduğunu kontrol edelim." Vicdanımız onun potansiyel ölümüne göz yummamıza izin vermiyor. Ne olursa olsun, yüzleşmeliyiz.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) Sesi görmezden gelin.",
+                            nextSceneId: "scene_53"
+                        ),
+                        StoryChoice(
+                            text: "B) Kapıyı açıp kontrol edin.",
+                            nextSceneId: "scene_54"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_52",
+                    title: "B) Cem'e kontrollü dozda uyuşturucu verelim.",
+                    content: """Cem'in sakinleşmesiyle odadaki anlık kriz bitmiş, ancak yerini çok daha tehlikeli bir sessizliğe bırakmıştı: Açgözlülüğün sessizliği. Herkesin gözü, Peder Elvan'ın çekmecesindeki para ve uyuşturucu poşetlerindeydi. Bu enkazın ortasında, bu küçük servet, bir güç sembolüydü. İsmail, "Peder," dedi tok ve tehditkâr bir sesle. "Madem elinizde böyle şeyler var... Belki de hepimizi rahatlatacak kadar vardır, ne dersiniz?" Peder Elvan, malını korumak isteyen bir satıcının içgüdüsüyle geriledi. "Onlar benim değil! Sadece... emanet!" Dr. Altan durumu kontrol altına almak için öne çıktı. "Kimsenin bir şey aldığı yok. Bu maddeler, doğru kullanılmazsa hepimizi tehlikeye atar. Ve para... Para burada bir işe yaramaz. Her şey bende duracak. İhtiyaç halinde ben dağıtırım." İsmail, Altan'a doğru alaycı bir şekilde güldü. "Vay, doktora bak. Hemen de şef kesildi başımıza. O parayla ve malla ne yapacağına biz karar veririz." Gerilim tehlikeli bir şekilde tırmanıyordu. Bir yanda aklın ve kontrolün sesi, diğer yanda kaba kuvvetin ve açgözlülüğün. "4. TUR : GÜÇ MÜCADELESİ" Grubun liderliği ve kaynakların kontrolü için bir savaş başlamak üzere. Vereceğiniz karar, bu mücadelenin kanlı mı yoksa kansız mı olacağını belirleyecek. Seçiminiz nedir? "A) İsmail'in tarafını tutalım." Bu kaos ortamında kurallara gerek yok. Herkes ihtiyacı olanı almalı. "Ganimeti" paylaşarak grup içindeki gerilimi anlık olarak azaltalım ve herkesi memnun edelim. "B) Dr. Altan'ın mantığına destek verelim. "İsmail'e karşı birleşip, kaynakların kontrolünün tek bir akıllı kişide kalması gerektiğini savunalım. Bu, İsmail'i karşımıza almak anlamına gelse bile.""",
+                    choices: []
+    ),
+                StoryScene(
+                    id: "scene_53",
+                    title: "A) Sesi görmezden gelin.",
+                    content: """"Bırakın," der İsmail kararlılıkla. "Ne hali varsa görsün. Bizim sorunumuz değil." Dr. Altan tereddüt etse de, risk almamayı seçer. Selin'in "Ama ya..." diye başlayan itirazı, İsmail'in sert bakışıyla son bulur. Grup, kapıdan gelen sesleri duymazdan gelerek katedralin diğer ucuna çekilir. Ancak bu karar, grup içindeki son güven kırıntısını da yok etmiştir. Herkes, sırtını kollamak zorunda olduğunu anlamıştır. Birbirlerinden korkmaktadırlar. Yaklaşık yarım saat sonra, kilitli odanın olduğu taraftan bu kez çok daha büyük bir gümbürtü duyulur. Ardından katedralin zemini şiddetle sarsılır. Tavanın bir bölümü daha çöker ve ana girişi tamamen kapatır. Grup, sesin geldiği yere korkuyla baktığında, Cem'in kilitli olduğu odanın duvarının ve zemininin tamamen çöktüğünü görür. Patlama, katedralin o bölümünün altındaki eski bir su sarnıcının tavanını zayıflatmıştır. Cem'in odadaki çırpınışları ve duvara vuruşları, son çöküşü tetiklemiştir. Oda, artık dipsiz, karanlık ve su dolu bir çukura dönüşmüştür. Cem'den hiçbir iz yoktur. "CEM ÖLDÜ." Onu ölüme terk etmişlerdir. Bu gerçek, hayatta kalanların üzerine bir karabasan gibi çöker. Artık kimse kimsenin yüzüne bakamaz. "Şimdi 4. Tur'a geçeceksiniz. Grup, bir üyesini ölüme terk etmenin vicdani yüküyle dağılmıştır. Güven sıfırdır ve şimdi daha da sağlam bir şekilde tuzağa düşmüşlerdir."""",
+                    choices: [
+                        StoryChoice(
+                            text: "4.Tura geçelim",
+                            nextSceneId: "scene_55"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_54",
+                    title: "B) Kapıyı açıp kontrol edin.",
+                    content: """Dr. Altan ve İsmail kapının önüne gelir. Selin, vicdan azabıyla hemen arkalarındadır. İsmail, kilidi hızla çevirip kapıyı sertçe iter. İçerisi zifiri karanlıktır. Selin, telefonunun ışığını içeri tutar. Gördükleri manzarayla kanları donar. Odanın taş zemininde büyük bir delik açılmıştır. Katedralin bu eski bölümünün zemini, patlamanın sarsıntısıyla çökmüş, altındaki karanlık mahzene bir geçit oluşturmuştur. Kırılan cam sesi, mahzene düşen birkaç şarap şişesinden gelmiştir. Cem ise deliğin kenarında, krizin doruğunda, elinde duvardan söktüğü ağır, demir bir haçla durmaktadır. Gözleri çılgınca parlar. Kapı açılıp ışık yüzüne vurunca, bir canavar görmüş gibi haykırır ve elindeki haçı savunma içgüdüsüyle öne doğru savurur. Kapıdan ilk giren İsmail, darbeden kıl payı kurtulur. Ancak tam arkasında duran ve ne olduğunu anlamaya çalışan Dr. Altan o kadar şanslı değildir. Demirin ucu, doğrudan Altan'ın göğsüne saplanır. Altan'ın gözleri şaşkınlıkla açılır. Ağzından kanlı bir hırıltı çıkar ve dizlerinin üzerine çöker. "DR. ALTAN ÖLDÜ." Cem, yaptığını fark edince haçı elinden düşürür ve deliğin kenarında bir yığın gibi büzülerek ağlamaya başlar. "Şimdi 5. Tur'a geçeceksiniz. Grubun beyni öldü. Geriye sadece kaba kuvvet, bir katil ve bir bağımlı kaldı. Ayrıca artık aşağıya inen yeni ve tehlikeli bir yolunuz var. """",
+                    choices: [
+                        StoryChoice(
+                            text: "5.Tura geçin",
+                            nextSceneId: "scene_56"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_55",
+                    title: "4.Tura geçelim",
+                    content: """"Bırakın," der İsmail kararlılıkla. "Ne hali varsa görsün. Bizim sorunumuz değil." Dr. Altan tereddüt etse de, risk almamayı seçer. Selin'in "Ama ya..." diye başlayan itirazı, İsmail'in sert bakışıyla son bulur. Grup, kapıdan gelen sesleri duymazdan gelerek katedralin diğer ucuna çekilir. Ancak bu karar, grup içindeki son güven kırıntısını da yok etmiştir. Herkes, sırtını kollamak zorunda olduğunu anlamıştır. Birbirlerinden korkmaktadırlar. Yaklaşık yarım saat sonra, kilitli odanın olduğu taraftan bu kez çok daha büyük bir gümbürtü duyulur. Ardından katedralin zemini şiddetle sarsılır. Tavanın bir bölümü daha çöker ve ana girişi tamamen kapatır. Grup, sesin geldiği yere korkuyla baktığında, Cem'in kilitli olduğu odanın duvarının ve zemininin tamamen çöktüğünü görür. Patlama, katedralin o bölümünün altındaki eski bir su sarnıcının tavanını zayıflatmıştır. Cem'in odadaki çırpınışları ve duvara vuruşları, son çöküşü tetiklemiştir. Oda, artık dipsiz, karanlık ve su dolu bir çukura dönüşmüştür. Cem'den hiçbir iz yoktur. "CEM ÖLDÜ." Onu ölüme terk etmişlerdir. Bu gerçek, hayatta kalanların üzerine bir karabasan gibi çöker. Artık kimse kimsenin yüzüne bakamaz. Selin, sessizce hıçkırırken "Bizim suçumuz," diye fısıldar. İsmail, öfkeyle duvara bir tekme atar. "Kes sesini! Kendi aptallığıydı!" diye bağırır ama sesi, kendi vicdanını bastırmaya çalışan bir adamın çaresizliğini taşır. Peder Elvan ise elindeki haçı sıkmaktan parmak boğumları bembeyaz kesilmiş, boş gözlerle çukura bakmaktadır. Ettiği dualar, artık boğazında düğümlenmiştir. Dr. Altan, sadece sessizce çöken girişe ve ardından Cem'in mezarı olan karanlık çukura bakar. Bu psikolojik çöküşün, nükleer serpintiden daha hızlı bir şekilde onları öldüreceğini biliyordur. "Şimdi 5. Tur'a geçeceksiniz. Dört kişilik grup, bir üyelerini ölüme terk etmenin ortak günahıyla paramparça olmuştur. Güven tamamen yok olmuş, yerini paranoya ve suçlamaya bırakmıştır. Ve şimdi, ana girişin de kapanmasıyla, eskisinden daha da sağlam bir şekilde tuzağa düşmüşlerdir."""",
+                    choices: [
+                        StoryChoice(
+                            text: "5.Tur Günahın Ağırlığı",
+                            nextSceneId: "scene_71"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_56",
+                    title: "5.Tura geçin",
+                    content: """Grubun beyni, aklın ve mantığın sesi Dr. Altan, göğsündeki demir haçla yerde can vermişti. Katili, uyuşturucu krizindeki Cem, yerde bir enkaz gibi ağlıyordu. İsmail ve Selin ise şok içinde donakalmıştı. Otorite boşluğunu, anında kaos ve korku doldurmuştu. İsmail, önce Altan'ın cesedine, sonra da ağlayan Cem'e baktı. Gözlerinde soğuk ve ölümcül bir ifade belirdi. "Bu it bir tehlike," diye hırladı. "Onu bu halde bırakamayız." Selin ise hem İsmail'in vahşi kararlılığından hem de Cem'in deliliğinden korkuyordu. Tek çıkış yolu, Altan'ın ölümüyle açığa çıkan, yerdeki karanlık delikti. O delik, bilinmez bir cehennem olabilirdi ama en azından bu odadaki cehennemden farklıydı. Seçiminiz nedir? "A) Adaletin Sonu:" İsmail'in "adaleti" sağlamasına izin verecekler. İsmail, kontrolünü kaybetmiş ve artık bir katil olan Cem'i bir tehdit olarak görüp onu kalıcı olarak "etkisiz hale getirecek". Muhtemelen onu o çukura atacak. "B) Karanlığa Atlayış:" Selin'in paniğini takip edip, yukarıdaki delilerden kaçmak için aşağıdaki bilinmezliğe inmeyi seçecekler. İsmail ve Selin, ağlayan Cem'i arkalarında bırakarak (ya da onu da zorla yanlarına alarak) mahzene inen yola adım atacaklar.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) Adaletin Sonu",
+                            nextSceneId: "scene_57"
+                        ),
+                        StoryChoice(
+                            text: "B) Karanlığa Atlayış",
+                            nextSceneId: "scene_58"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_57",
+                    title: "A) Adaletin Sonu",
+                    content: """"6. TUR: YENİ DÜNYA DÜZENİ" Selin'in sessizliği, İsmail için bir onaydı. Yavaşça, ağlayan Cem'e doğru yürüdü. Cem, başını kaldırdığında İsmail'in yüzündeki ifadeyi gördü ve sonunun geldiğini anladı. Yalvarmaya fırsat bulamadan, İsmail onu yakaladığı gibi yerdeki karanlık deliğe attı. Cem'in aşağıdan gelen boğuk sesi, kısa sürede kesildi. "CEM ÖLDÜ." Oda şimdi daha da sessizleşmişti. Geriye sadece iki kişi kalmıştı: Tiran ve onun tek tanığı. İsmail, Dr. Altan'ın ve şimdi de Cem'in kanıyla lekelenmiş zemine baktıktan sonra Selin'e döndü. Artık aralarında bir ittifak ya da düşmanlık yoktu. Sadece bir sahip ve bir köle vardı. "Aşağı iniyoruz," dedi İsmail. "Ve meşale sensin. Önden sen ineceksin." Bu bir rica değil, bir emirdi. Selin'in elindeki telefonun ışığı, artık kendi hayatının pamuk ipliğiydi. Ya bu karanlık deliğe inip bilinmez bir tehlikeyle yüzleşecek ya da arkasındaki kesin tehlikeyle. Seçiminiz : "A) Umutsuz İtaat:" Selin, kaderine boyun eğer. Hayatta kalmak için tek şansının bu olduğunu düşünerek titreyerek deliğin kenarına gelir ve İsmail'in emriyle karanlık mahzene doğru inmeye başlar. "B) Delice İsyan:" Selin'in içinde bir şey kopar. Kaybedecek hiçbir şeyi kalmadığını anlar. İsmail arkasını döndüğü bir an, tüm gücüyle ona doğru koşarak onu dengesiz deliğin kenarında gafil avlayıp itmeye çalışır.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) Umutsuz İtaat",
+                            nextSceneId: "scene_59"
+                        ),
+                        StoryChoice(
+                            text: "B) Delice İsyan",
+                            nextSceneId: "scene_60"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_58",
+                    title: "B) Karanlığa Atlayış",
+                    content: """Selin, bir an bile düşünmeden kendini deliğe doğru sarkıttı ve altındaki karanlığa atladı. Birkaç metrelik düşüşün ardından nemli ve soğuk bir zemine indi. İsmail, yukarıda Dr. Altan'ın cesedine ve ağlayan Cem'e son bir kez baktıktan sonra, bu deliliğin bir parçası olmak istemediğine karar vererek peşinden atladı. "CEM'İ GERİDE BIRAKTILAR." Kendilerini zifiri karanlık bir mahzende buldular. Selin'in telefonunun ışığı, etraflarındaki ıslak duvarları, yerdeki kemik parçalarını ve eski mezar lahitlerini aydınlatıyordu. Hava ağır ve küflüydü. Yukarıdaki cehennemden kaçmışlardı ama şimdi de bir mezarın içine düşmüşlerdi. Işığın aydınlattığı kadarıyla, önlerinde iki yol beliriyordu. Biri dar ve ıslak bir tünel, diğeri ise daha geniş mezar odalarına açılan bir geçitti. Seçiminiz : "A) Mezar Odaları: "Diğer yol, daha geniş ve bir dizi birbiriyle bağlantılı görünen mezar odasına açılıyordu. Bir labirentte kaybolma riski vardı ama belki de başka bir çıkış veya değerli bir şeyler barındırıyordu. "B) Su Yolu: "Yollardan biri, daralarak devam eden ve zemininden su sızan bir tünele benziyordu. Bir çıkışa benziyordu ama aynı zamanda bir tuzak da olabilirdi.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) Mezar Odaları",
+                            nextSceneId: "scene_61"
+                        ),
+                        StoryChoice(
+                            text: "B) Su Yolu",
+                            nextSceneId: "scene_62"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_59",
+                    title: "A) Umutsuz İtaat",
+                    content: """"7. TUR VE FİNAL" Selin, mahzenin dibine indiğinde İsmail de peşinden atlar. Birlikte, Selin'in telefonunun cılız ışığında ilerlemeye başlarlar. Mahzen, bir yeraltı su kanalına açılır. Suda ilerlerken, Selin'in ayağı kayar ve telefon elinden düşerek akıntıyla birlikte karanlıkta kaybolur. Mutlak karanlıkta kalırlar. İsmail öfkeyle Selin'in koluna yapışır. "Şimdi ne yapacağız, ha?" Tam o sırada, yukarıdan, geride bıraktıkları delikten bir ses gelir. Bu Cem'dir. Ölmemiştir. Ve şimdi, elinde Dr. Altan'ın cesedinden aldığı demir haçla, intikam için aşağıya inmektedir. Karanlıkta, kimin kime vurduğu belli olmayan, çığlıklar ve su şapırtılarıyla dolu umutsuz bir savaş başlar. "HERKES ÖLDÜ. Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_60",
+                    title: "B) Delice İsyan",
+                    content: """Selin'in umutsuz saldırısı, İsmail'i gafil avlar. İsmail, dengesini kaybederken Selin'in koluna yapışır ve ikisi birden karanlık deliğe düşerler. Düşüşleri, alttaki mahzenin zaten zayıf olan zeminini tetikler. Zemin, ikisinin de ağırlığıyla çöker ve onları bir alt kattaki, tamamen sularla dolu bir sarnıca gömer. Yukarıda, katedralde ise Cem, olan bitenden habersiz, tek başına ve aklını yitirmiş bir halde kalır. "BİR KİŞİ HAYATTA KALDI: Cem (ama akıl sağlığını yitirmiş ve yalnız). Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_61",
+                    title: "A) Mezar Odaları",
+                    content: """Mezar odaları, sonu gelmeyen bir labirente dönüşür. Saatlerce yürüdükten sonra, Selin'in telefonunun ekranında "Düşük Pil" uyarısı belirir. Panikle bir çıkış ararlar ama her oda bir diğerine benzemektedir. Tam o sırada, arkalarından gelen bir sesle donakalırlar. Bu Cem'dir. Onları takip etmiştir. Ancak krizin ve yalnızlığın etkisiyle tamamen delirmiştir ve artık onları birer düşman olarak görmektedir. Telefonun ışığı, Cem'in onlara doğru koştuğu an titrer ve söner. Mutlak karanlıkta, çığlıklar, boğuşma sesleri ve sonunda sessizlik duyulur. " HERKES ÖLDÜ. Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_62",
+                    title: "B) Su Yolu",
+                    content: """Tünele girerler ve su giderek derinleşir. Kısa süre sonra kendilerini bir yeraltı akıntısının içinde bulurlar. Akıntı onları sürüklerken defalarca duvarlara ve kayalara çarparlar. Bilinçlerini kaybetmenin eşiğine geldiklerinde, akıntı onları bir kanalizasyon mazgalına çarparak durdurur. İsmail, son bir güçle mazgalı kırar ve dışarı çıkarlar. Şehrin başka bir yerindedirler. Birbirlerinden nefret ederek, ama hayatta kalarak, harabe olmuş sokaklarda ayrı yönlere doğru topallayarak uzaklaşırlar. "İKİ KİŞİ HAYATTA KALDI: İsmail, Selin (ayrı ayrı). Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_63",
+                    title: "A) İsmail'in tarafını tutalım.",
+                    content: """Dr. Altan'ın itirazları, çoğunluğun anlık rahatlama isteği karşısında yetersiz kalır. İsmail keyifle sırıtır ve çekmecedeki poşetlerden birkaçını çıkarır. "İşte böyle anlaşalım." Birkaç dakika içinde katedralin kasvetli havası, sahte bir rahatlamayla dağılır. İsmail ve Cem uyuşturucunun etkisine girerken, yaşadığı dehşetten bir anlığına kaçmak isteyen Selin de tereddütle onlara katılır. Sadece Dr. Altan, olacakları öngörerek soğukkanlılığını korumaya çalışır. Herkesin gardı düşmüş, duyuları körelmiştir. Tam o sırada, ilk nükleer patlamanın zayıflattığı katedralin yapısından bir çatırtı sesi gelir. Tavandaki devasa avizenin zincirlerinden biri kopar. Kimse tehlikeyi zamanında fark edemez. Birkaç tonluk metal ve kristal yığını, tam da oturduğu yerde telefonunun ışığıyla kendine bakan Selin'in üzerine korkunç bir gürültüyle düşer. "SELİN ÖLDÜ." Çığlık atacak zaman bile bulamamıştır. Ortalığı toz bulutu ve ağır bir metal kokusu kaplar. Geriye kalanlar, sahte rahatlamalarının bedelini en acı şekilde ödemiştir. "Şimdi 5. Tur'a geçeceksiniz. Grubun dikkatsizliği bir ölüme yol açtı. Artık herkes, çevrenin de en az birbirleri kadar tehlikeli olduğunu anladı."""",
+                    choices: []
+    ),
+                StoryScene(
+                    id: "scene_64",
+                    title: "B) Dr.Altan'ın mantığına destek verelim.",
+                    content: """Selin ve Peder, korkuyla da olsa Dr. Altan'ın arkasında durur. "Doktor haklı," der Selin titrek bir sesle. "Kontrolü kaybetmemeliyiz." İsmail bu beklenmedik ittifak karşısında öfkelenir. "Demek öyle? Üçe bir mi yani?" Gözleri, en zayıf halka olan Peder Elvan'a kilitlenir. "Bütün bu pisliğin sahibi sensin, değil mi papaz efendi?" İsmail, bir hamlede Peder'in yakasına yapışıp onu duvara iter. "Her şeyi şimdi, buraya dök!" diye kükrer. Peder korkudan kekeler. "Yemin ederim... Onlar sadece emanet..." Dr. Altan araya girmeye çalışır. "İsmail, dur! Şiddet çözüm değil!" Ama İsmail dinlemez. Peder'i sarsarken, Peder'in kafası arkasındaki taş duvarın sivri bir çıkıntısına çarpar. Kuru, tok bir ses duyulur. Peder'in bedeni gevşer ve İsmail'in kollarından yere yığılır. Gözleri anlamsızca tavana bakmaktadır. Şakağından sızan kan, kirli zeminde küçük bir göl oluşturur. "PEDER ELVAN ÖLDÜ." Oda buz keser. İsmail, ellerine bakarak bir adım geri çekilir. "Ben... Ben istemedim." Dr. Altan, nabzını kontrol eder ve başını iki yana sallar. Artık bir katille aynı odada kilitli kalmışlardır. "Şimdi 5. Tur'a geçeceksiniz. Grup içinde bir katil var ve kaynakların kontrolü artık tamamen onda. Güven tamamen yok oldu."""",
+                    choices: [
+                        StoryChoice(
+                            text: "5.Tura ilerleyelim",
+                            nextSceneId: "scene_78"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_65",
+                    title: "5.Tur'a ilerleyebilirsiniz.",
+                    content: """Selin’in ezilmiş bedeninin görüntüsü, uyuşturucunun sahte rahatlığını bir anda bıçak gibi kesmişti. Dr. Altan, İsmail, Cem ve Peder Elvan, dehşet içinde enkaz yığınına bakıyorlardı. Bu ölüm, birinin diğerini öldürmesinden daha korkunçtu; çünkü bu, içinde bulundukları mezarın kendiliğinden üzerlerine çöktüğünün kanıtıydı. Her çatırtı, her rüzgâr uğultusu artık bir ölüm habercisiydi. "Bina... Bina üzerimize yıkılıyor," diye kekeledi Cem, ayılmanın getirdiği panikle. İsmail, ilk defa kaba kuvvetinin işe yaramayacağı bir durumla karşı karşıyaydı. "Bir yere sığınmalıyız. Daha sağlam bir yere." Peder Elvan, titrek elleriyle haçını sıkıyor, fısıltılarla dualar ediyordu. "Bu, Tanrı'nın gazabı... Buradan kaçış yok." Dr. Altan, etrafı inceliyordu. "Ya da bir an önce buradan çıkmalıyız. Beklemek intihar olabilir." Seçiminiz nedir?: A) En Güvenli Yere Sığın: Dr. Altan, katedralin mimarisini analiz eder ve en sağlam görünen bölüme (belki ana sunağın altındaki bir mahzen veya kalınduvarlı bir şapel) sığınmayı önerir. Amacı, çöküş sona erene kadar kendilerini güvende tutmaktır. B) Çıkış Yolu Ara: İsmail, sığınmanın sadece ölümü geciktireceğine inanır. "Burada beklersek eziliriz. Bir çıkış olmalı!" Katedralin ana girişini kapatan enkazı temizlemeye çalışmak veya başka bir gizli geçit aramak için gruba liderlik etmeye çalışır.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) En Güvenli Yere Sığın",
+                            nextSceneId: "scene_90"
+                        ),
+                        StoryChoice(
+                            text: "B) Çıkış Yolu Ara",
+                            nextSceneId: "scene_91"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_66",
+                    title: "Başlangıç Ekranı",
+                    content: """<h1>SON KATEDRALİN GÜNAHKARLARI</h1> <p> Bu hikaye, her seçimin geri alınamaz olduğu bir rüya labirentidir. </p>  <br> <span style="font-size: 14px; color: #888;"> Geri dönme şansın yok. Kaderini mühürle. </span>""",
+                    choices: []
+    ),
+                StoryScene(
+                    id: "scene_67",
+                    title: "A) Teker Teker Geçiş",
+                    content: """İsmail, ipi beline bağlayıp suya girer ve zorlanarak da olsa karşıya geçer. İpi sağlam bir kayaya bağlar. Sırayla diğerleri geçmeye başlar. Dr. Altan ve Selin karşıya ulaşır. Sıra Peder'e geldiğinde, başka bir sarsıntı tavanı titretir. Büyük bir kaya parçası koparak Peder'in üzerine düşer ve onu sulara gömer. Yol açıktır ama bir bedel daha ödemişlerdir. "ÜÇ KİŞİ HAYATTA KALDI: Dr. Altan, İsmail, Selin. Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_68",
+                    title: "B) İnsan Zinciri",
+                    content: """El ele tutuşarak suya girerler. Tam ortalarına geldiklerinde, görünmeyen bir akıntı İsmail'in ayağını yerden keser. Dengesini kaybeden dev adam, yanındaki Peder'i de beraberinde sürükler. Zincir kopar. Dr. Altan, son bir gayretle Selin'i yakalayıp geldikleri tarafa doğru geri çeker. İsmail ve Peder ise akıntıyla birlikte karanlık sulara gömülürler. "İKİ KİŞİ HAYATTA KALDI: Dr. Altan, Selin." "Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_69",
+                    title: "A) Hesaplaşma",
+                    content: """"6. TUR VE FİNAL: SON TÖVBE" Dr. Altan'ın suçlaması, İsmail'in son kontrol mekanizmasını da yıktı. İki adam, birbirlerine saldırdı. Bu bir kavga değil, bir yok etme mücadelesiydi. İsmail, kaba kuvvetiyle Altan'ı yakalayıp uçurumun kenarına doğru sürükledi. Dr. Altan ise tıp bilgisini acımasızca kullanarak İsmail'in sinir noktalarına, gözlerine saldırdı. Peder, onları ayırmaya çalıştığı sırada aralarında kaldı. İsmail, Altan'ı boşluğa itmek için son bir hamle yaptığında, ayağının altındaki zemin tamamen koptu. Dengesini kaybederek, Peder'i de beraberinde sürükleyerek karanlık uçuruma düştü. "İSMAİL ÖLDÜ. PEDER ELVAN ÖLDÜ." Dr. Altan, son anda kendini geriye atarak kurtuldu. Nefes nefese, uçurumun kenarında tek başına kalmıştı. Arkadaşlarından ve düşmanlarından geriye sadece boşluk kalmıştı. Akıl sağlığı pamuk ipliğine bağlı, tek başına, geldiği titrek yoldan geri dönmeye çalıştı. Ancak bu yolculukta, kaybettiği insanların hayalleri ona eşlik etti. Yorgunluk ve deliliğin birleşimiyle, bir anlık dikkatsizliği sonucu bastığı zemin çöktü ve o da diğerlerinin yanına, katakompların karanlığına gömüldü. Zaferi, sadece birkaç saatlik bir yalnızlıktan ibaret olmuştu. "BİR KİŞİ HAYATTA KALDI... ama o da öldü. Nihai Sonuç: HERKES ÖLDÜ. Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_70",
+                    title: "B) Soğukkanlı Geri Çekilme",
+                    content: """Nefretlerini bir anlığına bastırıp Peder'in liderliğinde dikkatlice geri çekildiler. Her adımda altlarından taşlar dökülse de, şansları yaver gitti ve Cem'in cesedinin olduğu ana koridora geri dönmeyi başardılar. Artık Peder'in ilk başta önerdiği "uzun ama güvenli" yola gitmekten başka çareleri kalmamıştı. Bu yol, onları bir yeraltı nehrinin kenarına çıkardı. Karşıya geçmek için eski ve çürük bir ahşap salı tamir etmek zorunda kaldılar. Bu zorunlu iş birliği sırasında kimse konuşmadı. Salı suya indirip akıntıyla ilerlemeye başladıklarında, Peder Elvan, bu yolculuğun sonunda onları nükleer serpintiyle yıkanmış bir dünyadan çok, askeri bir karantina bölgesine çıkaracağını itiraf etti. Tünelin ucunda gün ışığı belirdiğinde, bir mazgaldan dışarı çıktılar ve kendilerini üzerlerine onlarca silah doğrulmuş, gaz maskeli askerlerin önünde buldular. Peder, rütbeli bir subaya yaklaştı. "Anlaşmamız..." diye fısıldadı. Subay, Peder'e soğuk bir ifadeyle baktı. "Anlaşma, işe yarar olanları getirmen içindi," dedi. Sonra Altan ve İsmail'i süzdü. "Biri doktor, diğeri güçlü. Onlar işe yarar." Subay tekrar Peder'e döndü. "Ama senin gibi bir torbacının bize bir faydası yok." Peder'in yalvarmaya fırsatı olmadı. Tek bir silah sesi duyuldu ve Peder'in cansız bedeni çıktıkları kirli suya devrildi. "PEDER ELVAN ÖLDÜ." Dr. Altan ve İsmail, dehşet içinde donakaldılar. Kurtulmamışlardı. Sadece sahipleri değişmişti. Askerler onları sürüklerken anladılar ki, cehennemden kaçmamış, sadece cehennemin başka bir katına terfi etmişlerdi. "İKİ KİŞİ HAYATTA KALDI: Dr. Altan, İsmail. (Ama özgürlüklerini ve son umut kırıntılarını kaybettiler.) Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_71",
+                    title: "5.Tur Günahın Ağırlığı",
+                    content: """"5. TUR: GÜNAHIN AĞIRLIĞI" (Önceki Durum: Dört kişilik grup, Cem'i ölüme terk etmenin ortak günahıyla paramparça olmuştur. Güven tamamen yok olmuş, yerini paranoya ve suçlamaya bırakmıştır. Ana girişin de kapanmasıyla, eskisinden daha da sağlam bir şekilde tuzağa düşmüşlerdir.) Cem'in sessiz mezarı olan sarnıç, grubun ortasında bir kara delik gibi duruyordu. Sadece bir zemin çöküntüsü değil, aynı zamanda güvenin ve insanlığın da çöktüğü yerdi. Katedralin içindeki hava, solunması imkânsız bir hal almıştı; sadece toz ve küf değil, aynı zamanda söylenmemiş suçlamalar ve elle tutulur bir vicdan azabıyla doluydu. Selin, bir sıranın üzerine çökmüş, sessizce hıçkırıyordu. İsmail, devasa göğsü öfkeyle inip kalkarak katedralin bir ucundan diğerine volta atıyordu. Peder Elvan, gözleri kapalı bir şekilde sunağın önünde diz çökmüştü ama dudakları kımıldamıyordu; duaları, işlediği günahın ağırlığı altında sessizliğe gömülmüştü. Dr. Altan ise bu psikolojik çöküşün, nükleer serpintiden daha hızlı bir şekilde onları öldürecek bir zehir olduğunu biliyordu. Seçiminiz nedir? : "A) Arınma Ayini: "Dr. Altan, bu gidişata son vermek için öne çıkar. Herkesi zorla sunağın önünde bir araya getirir. "Birbirimizden kaçarak bu işin içinden çıkamayız. Onu ölüme terk ettik. Evet. Bu bir gerçek. Şimdi ya bu gerçeğin bizi tek tek yemesine izin veririz ya da konuşuruz. Herkes kimi suçladığını dürüstçe anlatacak. Ya bu yükü birlikte sırtlanırız ya da bu enkazın altında birbirimizi yiyerek deliririz." Bu, kanlı bir grup terapisi çağrısıdır. "B) İnkâr ve Fiziksel Kaçış: "Kimse bu gerçekle yüzleşmek istemez. İsmail, içindeki suçu ve öfkeyi somut bir hedefe yöneltir. Bir hırlamayla, ana kapıyı kapatan enkaz yığınına saldırır. Bu bir plan değildir; bu bir delirme nöbetidir. Taşları vahşice bir kenara fırlatmaya başlar. Diğerleri, bu kör edici eylemin içine çekilme ya da kendi kabuklarına çekilip grubun tamamen dağılmasını izleme arasında bir seçim yapmak zorunda kalır.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) Arınma Ayini",
+                            nextSceneId: "scene_72"
+                        ),
+                        StoryChoice(
+                            text: "B) İnkar ve Fiziksel Kaçış",
+                            nextSceneId: "scene_73"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_72",
+                    title: "A) Arınma Ayini",
+                    content: """"6. TUR VE FİNAL" (Önceki Durum: Grup, Dr. Altan'ın zoruyla yüzleşmek için bir araya geldi.) Altan'ın "terapi seansı", bir kıvılcımın barut fıçısına düşmesi gibi oldu. İlk patlayan Selin oldu. Gözyaşları içinde İsmail'i işaret etti. "SEN!" diye haykırdı. "Sen kapıyı açmamıza izin vermedin! 'Bırakın o veledi' dedin! Bu senin suçun!" Bu doğrudan suçlama, İsmail'in zar zor bastırdığı öfke barajını yıktı. "Benim suçum mu?" diye kükredi. Bir hamlede Selin'in üzerine yürüdü. Dr. Altan ve Peder araya girmeye çalıştı. "İsmail, dur!" Ama İsmail durmadı. Kargaşada Selin'i şiddetle itti. Selin, dengesini kaybederek sunağın sivri mermer kenarına kafasını çarptı. Kuru, tok bir ses duyuldu ve Selin cansız bir şekilde yere yığıldı. "SELİN ÖLDÜ." İsmail, bir anlık öfkesinin sonucuna dehşetle baktı. Peder, "Tanrım bizi affet," diye fısıldadı. Dr. Altan ise artık bir katille ve korkudan donakalmış bir din adamıyla baş başa kaldığını biliyordu. "Arınma" ayini, kanla son bulmuştu. Son Seçiminiz : "A) Soğuk İttifak: "Dr. Altan, durumu kontrol altına almak için İsmail'in kırılgan psikolojisine oynar. "O da suçluydu İsmail. Hepimiz gibi. Şimdi sadece biz kaldık. Birlikte hareket etmeliyiz." diyerek onu kendi tarafına çekmeye çalışır. "B) Deliliğin Yayılışı:" İsmail, işlediği bu ikinci cinayetin şoku ve suçluluğuyla aklını tamamen yitirir. Artık mantıklı düşünemeyen, sadece bir tehdit unsuru haline gelmiş bir canavardır. Peder'i de bir "tanık" olarak görür ve ona saldırır.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) Soğuk İttifak",
+                            nextSceneId: "scene_76"
+                        ),
+                        StoryChoice(
+                            text: "B) Deliliğin Yayılışı",
+                            nextSceneId: "scene_77"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_73",
+                    title: "B) İnkar ve Fiziksel Kaçış",
+                    content: """(Önceki Durum: İsmail, enkazı temizlemeye başladı, diğerleri de ona katıldı veya izledi.) İsmail'in umutsuz çabası bulaşıcı oldu. Selin ve Peder, sessizliğe ve vicdan azabına dayanamayarak, isteksizce ona küçük taşları taşımakta yardım etmeye başladılar. Dr. Altan ise onları uzaktan izliyor, bu umutsuz çabanın eninde sonunda bir felaketle sonuçlanacağını biliyordu. "Daha büyük bir şeye ihtiyacım var," diye hırladı İsmail. Gözü, duvardan sarkan, ucu sivri uzun bir demir parçasına takıldı. Ona ulaşmak için dengesiz enkaz yığınının üzerine tırmandı. "Dur, İsmail! Orası güvenli değil!" diye bağırdı Altan. Ama İsmail dinlemedi. Demire uzandığı an, bastığı enkaz parçaları altından kaydı. Dengesini kaybederek yuvarlanmaya başladı. Onunla birlikte yerinden oynayan büyük bir mermer blok, tam aşağıda duran ve ne olduğunu anlayamayan Peder Elvan'ın üzerine düştü. Peder'in son duası, ezilen kemiklerinin sesiyle kesildi. "PEDER ELVAN ÖLDÜ." İsmail, hafif sıyrıklarla kurtulmuştu ama sebep olduğu bu ikinci ölüm, inkâr edemeyeceği kadar gerçekti. Suçluluktan kaçmaya çalışırken, daha büyük bir günahın katili olmuştu. Selin, dehşet içinde çığlık atarak ondan uzaklaştı. Son Seçiminiz : "A) Tamamen Ayrılık:" Bu son olay, grup dinamiklerini tamamen yok eder. Selin, İsmail'den bir canavar gibi korkarak katedralin en uzak köşesine saklanır. Dr. Altan ise bu iki kırık ruhtan umudunu keser ve tek başına bir çıkış yolu aramaya karar verir. "B) Kefaret Görevi:" Dr. Altan, Peder'in cesedine ve çökmüş İsmail'e bakar. Selin'in paniğini kullanarak onu bir plana ikna eder: İsmail'i, günahlarının kefareti olarak enkazı temizlemeye devam etmesi için manipüle edeceklerdir.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) Tamamen Ayrılık",
+                            nextSceneId: "scene_74"
+                        ),
+                        StoryChoice(
+                            text: "B) Kefaret Görevi",
+                            nextSceneId: "scene_75"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_74",
+                    title: "A) Tamamen Ayrılık",
+                    content: """Selin kaçıp saklanır. İsmail, suçluluk komasında kalır. Dr. Altan, tek başına bir çıkış yolu ararken, patlamanın zayıflattığı yerlerden birinde, katedralin altındaki şarap mahzenine açılan gizli bir kapak bulur. Tek başına oradan ilerler. Ancak İsmail'in enkazda yarattığı sarsıntılar, katedralin ana yapısını son noktasına getirmiştir. Dr. Altan mahzene girdikten kısa bir süre sonra, katedralin tamamı büyük bir gürültüyle kendi içine çöker. İsmail ve kaçıp saklanan Selin, anında enkazın altında kalırlar. Dr. Altan ise mahzende mahsur kalmıştır; yukarıdaki çıkışı tonlarca enkaz kapatmıştır. Kaçtığını sanarken, kendini daha dar bir mezara hapsetmiştir. "HERKES ÖLDÜ. Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_75",
+                    title: "B) Kefaret Görevi",
+                    content: """Dr. Altan, İsmail'i kolayca ikna eder. "Bunu yaparsan... günahların affolur," diye fısıldar. İsmail, bir kefaret arayışıyla, enkazın en tehlikeli bölümüne dalar. Beklendiği gibi, enkazın geri kalanı üzerine çöker ve İsmail de altında kalarak can verir, ama son hamlesiyle dışarıya küçük bir geçit açmıştır. Dr. Altan, Selin'e "Gidiyoruz," der. Ama Selin, Altan'ın gözlerindeki soğukluğu görmüştür. "Seninle hiçbir yere gitmiyorum," der. Altan omuz silker ve tek başına o dar aralıktan dışarı çıkar. Selin, katedralde cesetlerle birlikte kalmayı, dışarıda bir canavarla yaşamaya tercih eder. "İKİ KİŞİ HAYATTA KALDI: Dr. Altan ve Selin (ayrı ayrı ve sonsuza dek ayrılmış). Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_76",
+                    title: "A) Soğuk İttifak",
+                    content: """"FİNAL" Dr. Altan, İsmail'i başarıyla manipüle eder. Peder ise bu tekinsiz ittifaktan korkarak onlardan uzaklaşır. Altan ve İsmail, Peder'in sırlarını bildiğini düşünerek onu avlamaya karar verir. Peder'i, çan kulesinde köşeye sıkıştırırlar. Ancak Peder, onlara teslim olmak yerine, "Tanrı beni yargılasın, siz değil!" diyerek kendini kuleden aşağı atar. Dr. Altan ve İsmail, nükleer serpintiyle yıkanmış harabe şehre bakan kuleden aşağıya bakarlar. Birlikte hayatta kalmışlardır, ama aralarındaki bağ güven değil, ortak günahlarıdır. "İKİ KİŞİ HAYATTA KALDI: Dr. Altan, İsmail. Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_77",
+                    title: "B) Deliliğin Yayılışı",
+                    content: """"FİNAL" İsmail, Peder'e saldırdığında, Peder can havliyle kaçmaya çalışır. Bu kovalamaca, onları Cem'in öldüğü, sarnıca açılan çukurun kenarına getirir. İsmail, Peder'i yakaladığı an, Dr. Altan arkadan yaklaşarak ikisini birden karanlık sulara iter. Kendi elleriyle son iki tehdidi de ortadan kaldırmıştır. Artık katedralde tamamen yalnızdır. Zekasıyla hayatta kalmıştır, ama kazandığı şey sadece daha büyük ve daha sessiz bir hapishanedir. " BİR KİŞİ HAYATTA KALDI: Dr. Altan. Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_78",
+                    title: "5.Tura ilerleyelim",
+                    content: """Peder Elvan’ın cansız bedeni, Dr. Altan ve Selin’in gözleri önünde yatıyordu. Bir köşede, krizin başlangıcındaki titremeleri artan Cem, olan biteni uyuşuk bir dehşetle izliyordu; gözleri Peder'in cesedinden çok, artık İsmail'in kontrolüne geçen çekmeceye takılı kalmıştı. İsmail, kanlı ellerine bakarak bir adım geri çekilmişti ama şoku hızla yerini soğuk bir pragmatizme bıraktı. "Bir kaza oldu," dedi, sesi buz gibiydi ve sadece Altan ile Selin'e değil, aynı zamanda titreyen Cem'e de hitap ediyordu. "Kimse olanları konuşmayacak. Anlaşıldı mı?" Artık katedraldeki tek güç oydu. Çekmecedeki uyuşturucu ve para onundu. Ve en önemlisi, üç tanığı vardı. Dr. Altan, zihninde olasılıkları hesaplıyordu: İsmail, bir bağımlıyı ve iki tanığı hayatta bırakır mıydı? Yoksa hepsi sadece birer yük, birer risk miydi? Selin ise korkudan neredeyse nefes alamıyordu. Gözleri sürekli İsmail ile Peder'in cesedi arasında gidip geliyordu. Hayatta kalmak için bir sonraki hamlelerini çok dikkatli seçmek zorundaydılar. Seçiminiz nedir?: "A) Gizli İttifak: "Dr. Altan ve Selin, İsmail'in dikkatini çekmeden gizlice bir ittifak kurmalı. İsmail'i etkisiz hale getirmek için bir plan yapacaklar. Katedralin içinde onu tuzağa düşürebilecekleri bir yer veya bir nesne arayacaklar. Bu, hayatta kalmak için tek şansları olabilir. "B) İtaat Et ve Zaman Kazan: "İsmail'e boyun eğip onun her dediğini yapacaklar. Kendilerini işe yarar ve tehdit oluşturmayan biri olarak gösterip onun güvenini kazanmaya çalışacaklar. Doğru an gelene kadar hayatta kalmak için itaatkâr bir rol oynayacaklar.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) Gizli İttifak",
+                            nextSceneId: "scene_79"
+                        ),
+                        StoryChoice(
+                            text: "B) İtaat Et ve Zaman Kazan",
+                            nextSceneId: "scene_80"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_79",
+                    title: "A) Gizli İttifak",
+                    content: """(Önceki Durum: Altan ve Selin, İsmail'e karşı gizlice anlaştı.) "İşe yarayın!" diye emretti İsmail. "Bir çıkış yolu bulun!" Bu, Altan ve Selin'in beklediği fırsattı. Birlikte, katedralin daha önce keşfetmedikleri, çan kulesine çıkan merdivenlerin olduğu loş bölüme doğru ilerlediler. "Plan ne?" diye fısıldadı Selin. "Kule," dedi Altan. "Merdivenler çürük. Onu yukarı çekeceğiz. Yapının dengesizliğini ona karşı kullanacağız." Plan basitti: Biri İsmail'i yem olarak yukarı çekecek, diğeri ise en zayıf noktada merdiveni kırarak İsmail'in düşmesini sağlayacaktı. Ancak bu plan, en zayıf halkayı, yani Cem'i hesaba katmıyordu. İsmail, onlara göz kulak olması için Cem'i de peşlerinden göndermişti. Seçiminiz : "A) Planı Uygula: "Dr. Altan, Cem'i görmezden gelerek plana sadık kalır. Selin'e, İsmail'i yukarı çekmesi için işaret verir. Cem'in varlığı, planı daha riskli hale getirir. "B) Planı Değiştir:" Dr. Altan, Cem'in varlığının bir fırsat olduğunu düşünür. Selin'e fısıldar: "Plan değişti. Cem'i kullanacağız. Ona bir doz vaat et, İsmail'i oyalamasını söyle."""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) Planı Uygula",
+                            nextSceneId: "scene_81"
+                        ),
+                        StoryChoice(
+                            text: "B) Planı Değiştir",
+                            nextSceneId: "scene_82"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_80",
+                    title: "B) İtaat Et ve Zaman Kazan",
+                    content: """(Önceki Durum: Altan ve Selin, İsmail'e itaat etmeye karar verdi.) Dr. Altan ve Selin, İsmail'in her dediğini harfiyen yerine getirmeye başladılar. Katedrali araştırıyor, buldukları her önemsiz şeyi ona rapor ediyorlardı. Bu itaat, İsmail'in egosunu okşamıştı. Artık kendini güvende hissediyordu. Ancak Cem'in durumu giderek kötüleşiyordu. Krizin pençesindeydi ve sürekli inliyordu. Bu ses, İsmail'in sinirlerini bozmaya başladı. "Şu veledi susturun," dedi İsmail, Dr. Altan'a bakarak. Elindeki uyuşturucu poşetlerinden birini ona attı. "Ona küçük bir doz ver. Sadece sussun. Ama hepsi değil, anladın mı?" Dr. Altan, zehir dolu poşeti eline aldı. Bu, bir anlık merhamet miydi, yoksa bir sadakat testi mi? Selin, Altan'ın vereceği kararı korkuyla izliyordu. Seçiminiz : "A) Merhamet Testi: "Dr. Altan, İsmail'in emrine uyar. Cem'e, onu sakinleştirecek ama öldürmeyecek küçük bir doz verir. Bu, İsmail'e sadakatini kanıtlar ama Cem'i bir tehdit olarak hayatta bırakır. "B) Fırsat:" Dr. Altan, bunun bir fırsat olduğunu anlar. İsmail'in bilmediği şey, Altan'ın bilim insanı olarak bu maddelerin ölümcül dozunu çok iyi bilmesidir. Cem'e verdiği doz, onu "kalıcı olarak" susturacaktır.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) Merhamet Testi",
+                            nextSceneId: "scene_83"
+                        ),
+                        StoryChoice(
+                            text: "B) Fırsat",
+                            nextSceneId: "scene_84"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_81",
+                    title: "A) Planı Uygula",
+                    content: """"FİNAL" Selin, İsmail'i kuleye çeker. İsmail tırmanmaya başladığında Altan merdiveni kırmaya çalışır, ancak Cem, efendisine sadakatle "Tuzak!" diye bağırır. İsmail, Altan'ın üzerine atlar. Boğuşmaları, tüm merdiven yapısının çökmesine neden olur. Üçü de çığlıklar içinde aşağıya düşer. Selin, kendi kurduğu tuzağın tek tanığı olarak, üç cesetle birlikte katedralde tek başına kalır. "BİR KİŞİ HAYATTA KALDI: Selin. Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_82",
+                    title: "B) Planı Değiştir",
+                    content: """"FİNAL" Selin, Cem'e bir doz vaat eder. Cem, bu umutla İsmail'i merdivenlerde oyalarken, Altan ve Selin kaçmak için bir fırsat bulur. Daha önce fark ettikleri, sunağın arkasındaki katakomb kapısına yönelirler. Ancak kapıyı açtıkları an, Cem'in ihanetini anlayan İsmail, öfkeyle Cem'i merdivenlerden aşağı atar ve peşlerinden gelir. Altan ve Selin, arkalarında hızla yaklaşan İsmail'in olduğu karanlık katakomplara dalarlar. Onlar için kaçış değil, sadece kovalamaca başlamıştır. "İKİ KİŞİ HAYATTA KALDI... ama av devam ediyor. (Altan, Selin) Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_83",
+                    title: "A) Merhamet Testi",
+                    content: """"FİNAL: SON DOZ, SON OYUN" (Önceki Durum: Dr. Altan, İsmail'in emrine uyarak Cem'e sakinleştirici ama ölümcül olmayan bir doz verdi.) Dr. Altan, bir cerrah hassasiyetiyle ayarladığı dozu Cem'e verdi. Birkaç dakika içinde Cem'in titremeleri durdu, inlemeleri kesildi ve uyuşuk bir sessizliğe büründü. Dr. Altan, sadakat testini geçmişti. İsmail, bu duruma memnuniyetle homurdandı. Artık katedralde mutlak bir düzen vardı: O emrediyor, diğerleri itaat ediyordu. Bu sahte barış, İsmail'in gardını düşürmesine neden oldu. Artık Altan ve Selin'i bir tehdit olarak görmüyor, daha çok işe yarar hizmetkârları olarak görüyordu. Bu durum, Dr. Altan ve Selin'e, İsmail'in daha önce fark etmedikleri bir zayıflığını gösterdi: Kibir. Ve en önemlisi, İsmail artık Peder'in odasında, ganimetlerinin başında uyumaya başlamıştı. Bu, Altan ve Selin'in beklediği o "doğru an" olabilirdi. Son Seçiminiz : "A) Gece Avı:" Dr. Altan, Selin'e fısıldar: "Bu gece... o uyurken." Plan, gece İsmail uykuya daldığında, Peder'in cesedinin yanından aldıkları ağır, metal haçı kullanarak onu sessizce ortadan kaldırmaktır. Bu, soğukkanlılık gerektiren bir suikast girişimidir. "B) Sabırlı Kuşatma: "Selin, doğrudan bir saldırıdan çok korkar. "Hayır," der. "Bekleyelim. Onu yavaş yavaş zehirleyelim." Plan, buldukları küflü yiyecekleri veya kirli suları, Altan'ın bilgisiyle en zararlı olanları seçerek, yavaş yavaş İsmail'e vermektir. Bu, daha uzun ama daha az riskli bir plandır.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) Gece Avı",
+                            nextSceneId: "scene_85"
+                        ),
+                        StoryChoice(
+                            text: "B) Sabırlı Kuşatma",
+                            nextSceneId: "scene_86"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_84",
+                    title: "B) Fırsat",
+                    content: """(Önceki Durum: Dr. Altan, fırsatı kullanarak Cem'e ölümcül bir doz verdi.) Dr. Altan, hazırladığı ölümcül dozu Cem'e verdi. Cem, birkaç dakika sonra son nefesini vererek sessizce öldü. "CEM ÖLDÜ." Selin, olan biteni dehşet içinde izledi. Dr. Altan artık sadece bir bilim insanı değil, soğukkanlı bir katildi. İsmail, bir süre sonra Cem'in sessizliğinden şüphelendi. Yanına gidip onu kontrol ettiğinde, Cem'in buz gibi tenini ve durmuş nefesini fark etti. Öfkeyle Dr. Altan'a döndü. Gözleri kısılarak, "Ona ne verdin?" diye sordu. "Sadece emrettiğini," dedi Altan, yüzünde hiçbir ifade olmadan. "Dozu dayanıksız vücudu kaldırmamış olmalı." Ama İsmail bu yalana inanmadı. Altan'ın onu da ortadan kaldırmak için bir planı olduğunu anladı. Katedraldeki sahte barış bitmişti. Artık ortada sadece iki alfa vardı ve bu katedral, ikisine birden dar gelecekti. Selin, bu iki canavarın arasında sıkışıp kalmıştı. Son Seçiminiz : "A) Kaçınılmaz Düello:" İsmail, lafı daha fazla uzatmaz. "Yalancı," diye hırlar ve eline geçirdiği demir bir şamdanla Dr. Altan'a saldırır. Zekâ ile kaba kuvvetin son, ölümcül savaşı başlar. Selin, bu savaşın ortasında bir kurban mı olacak, yoksa bir taraf mı seçecektir? "B) Üçüncü Taraf: "Selin, ikisinin de birbirini yok etmesini beklerse sıranın kendisine geleceğini anlar. İkisi birbirine odaklanmışken, o sessizce Peder'in cesedinin yanına gider. Peder'in cübbesinin altında, her zaman taşıdığı küçük ama keskin bir ayin hançerinin kabzasını fark eder.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) Kaçınılmaz Düello",
+                            nextSceneId: "scene_87"
+                        ),
+                        StoryChoice(
+                            text: "B) Üçüncü Taraf",
+                            nextSceneId: "scene_88"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_85",
+                    title: "A) Gece Avı",
+                    content: """"FİNAL" Gece çöktüğünde, Altan ve Selin planlarını uygulamaya koyulur. Sessizce İsmail'in uyuduğu odaya süzülürler. Ancak İsmail uyumuyordur. Onları beklemektedir. "Sizi aptallar," der karanlıkta. "Gerçekten bana güvendiğinizi mi sandınız?" Işık açıldığında, İsmail'in elinde, duvardan söktüğü demir bir haç vardır. Sonuç, hızlı ve acımasız olur. "HERKES ÖLDÜ. Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_86",
+                    title: "B) Sabırlı Kuşatma",
+                    content: """"FİNAL" Planları işe yarar. Birkaç gün içinde İsmail, zehirlenmenin etkisiyle zayıf düşer. Gücü onu terk ettiğinde, Dr. Altan ve Selin, artık bir tehdit oluşturmayan bu devi kolayca etkisiz hale getirirler. Katedral artık onlara aittir. Birbirlerine olan güvenleri kırılgandır ama ortak bir zafer ve ortak bir günahla birbirlerine bağlanmışlardır. "İKİ KİŞİ HAYATTA KALDI: Dr. Altan, Selin. Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_87",
+                    title: "A) Kaçınılmaz Düello",
+                    content: """"FİNAL" İsmail'in vahşi saldırıları, Altan'ı köşeye sıkıştırır. Ancak Altan, katedralin zayıf noktalarını daha iyi analiz etmiştir. İsmail'i, Cem'in öldüğü sarnıca açılan çukurun kenarına çeker. İsmail son darbeyi indirmek için hamle yaptığında, Altan kenara çekilir ve İsmail'in kendi ağırlığıyla karanlık sulara düşmesini sağlar. Ancak bu boğuşma sırasında Selin, kaçmaya çalışırken dengesiz enkazın çökmesiyle hayatını kaybeder. Altan, tek başına kalmıştır. "BİR KİŞİ HAYATTA KALDI: Dr. Altan. Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_88",
+                    title: "B) Üçüncü Taraf",
+                    content: """"FİNAL" Altan ve İsmail birbirleriyle ölümüne savaşırken, Selin hançeri alıp arkalarından sessizce yaklaşır. Onu en çok korkutan, en acımasız olan İsmail'i sırtından bıçaklar. İsmail acıyla dönerken, bu anlık dikkat dağınıklığı Dr. Altan'a fırsat verir ve Altan, İsmail'in işini bitirir. Ancak Altan, zaferle Selin'e döndüğünde, Selin'in gözlerindeki ifadeyi görür: Artık kimseye güvenmiyordur. "Sıra sende, doktor," der ve bu kez Altan'a saldırır. Katedral, sonu gelmeyen bir ihanet döngüsüyle sessizliğe gömülür. "HERKES ÖLDÜ. Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_89",
+                    title: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ? ",
+                    content: """Nükleer ateş, onlar için kıyametin sadece başlangıcıydı. Asıl mahşer, katedralin kapıları mühürlendiğinde, günahlarından örülmüş o kusursuz ve kendi kendini yok eden ekosistemle baş başa kaldıklarında başladı. Onlar beş yabancı değildi; her biri, diğerinin suçunun bir sonraki halkası olan bir zincirdi ve o kutsal duvarlar arasında, zincir kendi kendini yemeye başladı. Bilim İnsanı, hayatı soğuk bir denkleme indirgeyip insanları denek olarak öldüren o adam, kontrol edemediği kaosun içinde boğuldu ve kendi deneyinin başarısız bir sonucu oldu. Öldürdüğü kurbanları sattığı Kasap, insanları et ve kemik olarak parçalayan o adam, sonunda ya enkazın altında bir et yığınına dönüştü ya da kendi gücünün anlamsızlaştığı bir tuzağın parçası oldu. Kasabın kadavra diye sattığı cesetleri alan Tıp Öğrencisi, hayatı öğrenmek için ölüleri keserken, ruhunu esir alan zehri tedarik ettiği Din Adamı'nın sattığı uyuşturucunun pençesinde kendi canını kesti. Sahte bir inancın ardına saklanarak öğrenciye zehir satan o din adamı, tüm duaları cevapsız kalırken sattığı günahın içinde boğuldu. Ve en sonunda, tüm bu kanlı çarktan dönen parayı dijital bir gülümsemeyle aklayan Influencer, gerçeğin çirkinliği üzerine çöktüğünde ilk ezilen oldu. Dışarıda, onların gizli ortaklığı ölümden ve yalandan bir düzen kurmuştu. İçeride ise, kaçacak yer kalmadığında, o düzenin dişlileri birbirini parçaladı. Onları öldüren bombalar değildi. Onları öldüren, her birinin diğerinin suçunun son durağı olduğu, kendi elleriyle kurdukları o kusursuz, kanlı ağdı.""",
+                    choices: []
+    ),
+                StoryScene(
+                    id: "scene_90",
+                    title: "A) En Güvenli Yere Sığın",
+                    content: """"6. TUR " (Önceki Durum: Grup, Dr. Altan'ın rehberliğinde katedralin en sağlam olduğuna inandıkları mahzene indi.) Dr. Altan'ın yönlendirmesiyle, grup, sunağın altındaki eski bir mahzene inmeyi başardı. Kalın taş duvarları ve alçak tavanı, dışarıdaki gürültüyü ve katedralin çatırtılarını boğuk seslere dönüştürüyordu. Burada, belki de güvendeydiler. Ama ne kadar süreyle? Ve dışarıda ne bekliyordu? Ancak bu küçük zafer, içlerindeki gerilimi dindirmeye yetmedi. Mahzenin klostrofobik atmosferi, Cem'in krizini yeniden tetikledi. "Dışarı çıkmalıyız! Hava yok!" diye bağırmaya başladı. İsmail, Cem'i susturmaya çalıştı ama Cem'in panik atağı kontrolden çıkıyordu. Peder, "Sakin ol evlat, Tanrı bizi koruyacak," dese de, sesi titriyordu. Dr. Altan, son bir karar vermek zorunda kaldı: Cem'i sakinleştirmek için elindeki son uyuşturucu dozlarından birini kullanmak mı, yoksa Cem'in kontrolsüz hareketlerinin diğerlerinin de akıl sağlığını tehdit etmesine izin vermek mi? Son Seçiminiz : "A) Mahsur Kalma: "Dr. Altan, Cem'in krizine doğrudan müdahale etmez. Grubun geri kalanı, Cem'in çığlıkları ve katedralin dışarıdan gelen çökme sesleriyle birlikte mahzende mahsur kalır, kaderlerine razı olurlar. "B) Zorla Sakinleştirme:" Dr. Altan, Cem'e zorla sakinleştirici bir doz uygular. Bu, onu susturur ama Cem'in hayatını riske atar ve grubun zaten zayıf olan güvenini daha da sarsar.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) Mahsur Kalma",
+                            nextSceneId: "scene_94"
+                        ),
+                        StoryChoice(
+                            text: "B) Zorla Sakinleştirme",
+                            nextSceneId: "scene_95"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_91",
+                    title: "B) Çıkış Yolu Ara",
+                    content: """(Önceki Durum: İsmail'in liderliğinde grup, ana girişi kapatan enkazı temizlemeye başladı.) İsmail'in öfkeyle enkaz yığınına saldırmasıyla, diğerleri de isteksizce ona katıldı. Peder dualar mırıldanarak, Cem ise uyuşturucunun etkisiyle yavaş hareketlerle küçük taşları taşıyorlardı. Dr. Altan ise enkazın yapısını inceliyor, bu umutsuz çabanın ne kadar riskli olduğunu hesaplıyordu. Her kaldırılan taş, katedralin daha da sallanmasına neden oluyordu. Tam en büyük mermer bloklardan birini yerinden oynattıklarında, tavanın zayıf bir noktasından daha büyük bir çatırtı sesi duyuldu. Artık kaçacak zamanları kalmamıştı. Katedral, büyük bir gürültüyle kendi içine çökmeye başladı. Herkes çığlıklar içinde dağıldı. Son Seçiminiz : "A) Umutsuz Kaçış:" Dr. Altan, son bir refleksle enkazda açılan küçük bir aralıktan dışarıya doğru atılır. Diğerleri de onu takip etmeye çalışır ama katedral hızla üzerlerine kapanmaktadır. "B) Kaderi Kabul Etme:" İsmail, bu çöküşün kaçınılmaz olduğunu anlar. Paniklemeyi bırakır ve katedralin ortasında, Peder ve Cem ile birlikte, kaderlerine razı bir şekilde ayakta durur.""",
+                    choices: [
+                        StoryChoice(
+                            text: "A) Umutsuz Kaçış",
+                            nextSceneId: "scene_92"
+                        ),
+                        StoryChoice(
+                            text: "B) Kaderi Kabul Etme",
+                            nextSceneId: "scene_93"
+                        )
+                    ]
+    ),
+                StoryScene(
+                    id: "scene_92",
+                    title: "A) Umutsuz Kaçış",
+                    content: """Dr. Altan, kendini enkazdan dışarı atmayı başarır. Dışarıda, nükleer serpintinin dumanları arasında, harabelerin sessizliği onu karşılar. Arkasına baktığında katedralin tamamen çöktüğünü görür. Ne İsmail, ne Cem ne de Peder ondan sonra gelebilmiştir. Hayatta kalmıştır, ama insanlığın kalıntıları arasında, tek başına. "BİR KİŞİ HAYATTA KALDI: Dr. Altan. Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_93",
+                    title: "B) Kaderi Kabul Etme",
+                    content: """Katedral, büyük bir gürültüyle kendi içine çöker. İsmail, Cem ve Peder Elvan, bu yıkımın ortasında kalırlar. Kaderlerini kabullenmiş bir şekilde, kendi günahlarıyla birlikte enkazın altında can verirler. Bir zamanların görkemli katedrali, artık üç günahkarın mezarından farksızdır. "HERKES ÖLDÜ. Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_94",
+                    title: "A) Mahsur Kalma",
+                    content: """Cem'in çığlıkları ve katedralin çökme sesleri, mahzenin içinde akıl almaz bir kargaşa yaratır. Birkaç saat sonra, mahzenin tavanı da baskıya dayanamaz ve üzerlerine çöker. Hepsi, bir yığın taşın altında, kendi korkularıyla baş başa can verirler. " HERKES ÖLDÜ. Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    ),
+                StoryScene(
+                    id: "scene_95",
+                    title: "B) Zorla Sakinleştirme",
+                    content: """"FİNAL" Cem, verilen dozdan sonra kalıcı olarak sessizleşir. Ölümcül doz, Cem'in zaten zayıf olan kalbini durdurmuştur. "CEM ÖLDÜ." Mahzende şimdi sadece Altan, İsmail ve Peder vardır. Dışarıdaki çöküş bittiğinde, sonunda yukarı çıkmaya karar verirler. Ama katedralin girişi tamamen kapanmıştır. Mahzene giden tek yol da kapanmıştır. Sonsuza dek o mahzende kapana kısılırlar, kendi günahlarının sessiz mezar taşları olurlar. "HERKES ÖLDÜ (Mahzende Mahsur Kaldılar). Oyun Bitti."""",
+                    choices: [
+                        StoryChoice(
+                            text: "GERÇEKLERİ ÖĞRENMEK İSTER MİSİN ?",
+                            nextSceneId: "scene_89"
+                        )
+                    ],
+                    isEnding: true
+    )
+            ]

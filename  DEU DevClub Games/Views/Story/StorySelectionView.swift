@@ -13,11 +13,10 @@ struct StorySelectionView: View {
     @State private var selectedStory: Story?
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
-                // Karanlık arka plan
-                Color.black
-                    .ignoresSafeArea()
+                // Liquid Glass Background
+                LiquidGlassBackground()
                 
                 ScrollView {
                     VStack(spacing: 30) {
@@ -48,11 +47,14 @@ struct StorySelectionView: View {
             }
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button("Kapat") {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button(action: {
                         dismiss()
+                    }) {
+                        Image(systemName: "xmark")
+                            .font(.system(size: 16, weight: .semibold))
+                            .foregroundStyle(.primary)
                     }
-                    .foregroundStyle(.white)
                 }
             }
         }
@@ -130,7 +132,7 @@ struct StoryCardView: View {
             )
             .shadow(color: .black.opacity(0.3), radius: 10, x: 0, y: 5)
         }
-        .buttonStyle(PlainButtonStyle())
+        .buttonStyle(.plain)
     }
 }
 
