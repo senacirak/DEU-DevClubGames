@@ -1,8 +1,8 @@
 //
 //  SettingsView.swift
-//  DEU DevClub Games
+//   DEU DevClub Games
 //
-//  Created by Cursor on 18.01.2026.
+//  Created by Sena Çırak on 18.01.2026.
 //
 
 import SwiftUI
@@ -79,12 +79,13 @@ struct SettingsView: View {
                             }
                         }
 
-                        SettingsCard(title: "Hakkında", systemImage: "info.circle.fill") {
-                            VStack(spacing: 12) {
-                                InfoRow(title: "Sürüm", value: Bundle.main.appVersion)
-                                InfoRow(title: "Build", value: Bundle.main.appBuild)
-                            }
-                        }
+                        // Hakkında (kart değil): küçük ve silik footer
+                        Text("Sürüm \(Bundle.main.appVersion)")
+                            .font(.caption2)
+                            .foregroundStyle(.primary)
+                            .opacity(0.8)
+                            .frame(maxWidth: .infinity, alignment: .center)
+                            .padding(.top, 6)
                     }
                     .padding(.horizontal, 16)
                     .padding(.top, 16)
@@ -281,14 +282,7 @@ struct PolicySection<Content: View>: View {
 
 struct FeedbackView: View {
     @Environment(\.dismiss) private var dismiss
-    @Environment(\.openURL) private var openURL
-
-    @State private var feedbackText: String = ""
-    @State private var showingMailComposer = false
-    @State private var mailResultMessage: String?
-
-    private let subject = "DEU DevClub Games – Geri Bildirim"
-    private let defaultRecipientEmail = "senacrk.dev@gmail.com"
+    private let recipientEmail = "senacrk.dev@gmail.com"
 
     var body: some View {
         NavigationStack {
@@ -297,61 +291,21 @@ struct FeedbackView: View {
 
                 ScrollView {
                     VStack(spacing: 16) {
-                        SettingsCard(title: "Mesajın", systemImage: "square.and.pencil") {
+                        SettingsCard(title: "E‑posta", systemImage: "envelope.fill") {
                             VStack(alignment: .leading, spacing: 10) {
-                                Text("Ne iyi gitti? Ne geliştirelim? Hata varsa adımları yaz.")
+                                Text("Geri bildirim için şu adrese mail atabilirsiniz:")
                                     .font(.system(size: 13, weight: .medium, design: .rounded))
                                     .foregroundStyle(.secondary)
 
-                                TextEditor(text: $feedbackText)
-                                    .frame(minHeight: 160)
-                                    .scrollContentBackground(.hidden)
-                                    .padding(10)
-                                    .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 14, style: .continuous)
-                                            .stroke(Color.white.opacity(0.12), lineWidth: 1)
-                                    )
-                            }
-                        }
-
-                        SettingsCard(title: "Gönder", systemImage: "paperplane.fill") {
-                            VStack(spacing: 12) {
-                                ShareLink(item: feedbackPayload) {
-                                    Label("Paylaş (Mail / Mesaj / Notlar…)", systemImage: "square.and.arrow.up")
-                                        .frame(maxWidth: .infinity)
-                                }
-                                .font(.system(size: 16, weight: .semibold, design: .rounded))
-                                .foregroundStyle(.white)
-                                .padding()
-                                .background(.primaryGradient)
-                                .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
-
-                                Button {
-                                    if MailComposeView.canSendMail {
-                                        showingMailComposer = true
-                                    } else {
-                                        openURL(makeMailtoURL())
-                                    }
-                                } label: {
-                                    Label("Mail ile Gönder", systemImage: "envelope.fill")
-                                        .frame(maxWidth: .infinity)
-                                }
-                                .buttonStyle(.borderedProminent)
-                                .tint(.blue)
-
-                                if let mailResultMessage {
-                                    Text(mailResultMessage)
-                                        .font(.system(size: 13, weight: .medium, design: .rounded))
+                                if recipientEmail.isEmpty {
+                                    Text("(E‑posta adresi tanımlı değil)")
+                                        .font(.system(size: 14, weight: .semibold, design: .rounded))
                                         .foregroundStyle(.secondary)
+                                } else {
+                                    Link(recipientEmail, destination: URL(string: "mailto:\(recipientEmail)")!)
+                                        .font(.system(size: 16, weight: .semibold, design: .rounded))
+                                        .frame(maxWidth: .infinity, alignment: .leading)
                                 }
-                            }
-                        }
-
-                        SettingsCard(title: "Hızlı Bilgi", systemImage: "wrench.and.screwdriver.fill") {
-                            VStack(spacing: 10) {
-                                InfoRow(title: "Sürüm", value: Bundle.main.appVersion)
-                                InfoRow(title: "Build", value: Bundle.main.appBuild)
                             }
                         }
                     }
@@ -372,116 +326,9 @@ struct FeedbackView: View {
                     }
                 }
             }
-            .sheet(isPresented: $showingMailComposer) {
-                MailComposeView(
-                    recipients: defaultRecipientEmail.isEmpty ? [] : [defaultRecipientEmail],
-                    subject: subject,
-                    body: feedbackPayload
-                ) { resultMessage in
-                    mailResultMessage = resultMessage
-                }
-            }
-        }
-    }
-
-    private var feedbackPayload: String {
-        let text = feedbackText.trimmingCharacters(in: .whitespacesAndNewlines)
-        let userText = text.isEmpty ? "(Mesaj boş)" : text
-        return """
-        \(subject)
-
-        Mesaj:
-        \(userText)
-
-        Teknik Bilgi:
-        - Sürüm: \(Bundle.main.appVersion) (\(Bundle.main.appBuild))
-        """
-    }
-
-    private func makeMailtoURL() -> URL {
-        let recipient = defaultRecipientEmail
-        let encodedSubject = subject.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? subject
-        let encodedBody = feedbackPayload.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? feedbackPayload
-        let urlString: String
-        if recipient.isEmpty {
-            urlString = "mailto:?subject=\(encodedSubject)&body=\(encodedBody)"
-        } else {
-            urlString = "mailto:\(recipient)?subject=\(encodedSubject)&body=\(encodedBody)"
-        }
-        return URL(string: urlString) ?? URL(string: "mailto:")!
-    }
-}
-
-#if canImport(MessageUI)
-import MessageUI
-
-struct MailComposeView: UIViewControllerRepresentable {
-    static var canSendMail: Bool { MFMailComposeViewController.canSendMail() }
-
-    let recipients: [String]
-    let subject: String
-    let body: String
-    let onFinish: (String?) -> Void
-
-    func makeCoordinator() -> Coordinator {
-        Coordinator(onFinish: onFinish)
-    }
-
-    func makeUIViewController(context: Context) -> MFMailComposeViewController {
-        let vc = MFMailComposeViewController()
-        vc.mailComposeDelegate = context.coordinator
-        vc.setToRecipients(recipients)
-        vc.setSubject(subject)
-        vc.setMessageBody(body, isHTML: false)
-        return vc
-    }
-
-    func updateUIViewController(_ uiViewController: MFMailComposeViewController, context: Context) {}
-
-    final class Coordinator: NSObject, MFMailComposeViewControllerDelegate {
-        private let onFinish: (String?) -> Void
-
-        init(onFinish: @escaping (String?) -> Void) {
-            self.onFinish = onFinish
-        }
-
-        func mailComposeController(
-            _ controller: MFMailComposeViewController,
-            didFinishWith result: MFMailComposeResult,
-            error: Error?
-        ) {
-            controller.dismiss(animated: true)
-
-            if let error {
-                onFinish("Mail gönderilemedi: \(error.localizedDescription)")
-                return
-            }
-
-            switch result {
-            case .cancelled: onFinish("İptal edildi.")
-            case .saved: onFinish("Taslak olarak kaydedildi.")
-            case .sent: onFinish("Gönderildi, teşekkürler!")
-            case .failed: onFinish("Gönderim başarısız oldu.")
-            @unknown default: onFinish(nil)
-            }
         }
     }
 }
-#else
-struct MailComposeView: View {
-    static var canSendMail: Bool { false }
-
-    let recipients: [String]
-    let subject: String
-    let body: String
-    let onFinish: (String?) -> Void
-
-    var body: some View {
-        Text("Mail gönderimi bu cihazda desteklenmiyor.")
-            .onAppear { onFinish(nil) }
-    }
-}
-#endif
 
 #Preview {
     SettingsView()

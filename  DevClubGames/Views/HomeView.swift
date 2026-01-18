@@ -72,14 +72,10 @@ struct HomeView: View {
                         .padding(.horizontal)
                         
                         // Footer
-                        VStack(spacing: 8) {
+                        VStack {
                             Text("Developer Club")
                                 .font(.caption)
-                                .foregroundStyle(.secondary)
-                            
-                            Text("Dokuz Eylül Üniversitesi")
-                                .font(.caption2)
-                                .foregroundStyle(.tertiary)
+                                .foregroundStyle(.primary)
                         }
                         .padding(.bottom, 30)
                     }

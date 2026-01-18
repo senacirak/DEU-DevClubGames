@@ -132,7 +132,7 @@ struct TeamScoreCard: View {
             }
         }
         .padding(20)
-        .background(.regularMaterial)
+        .background(.ultraThinMaterial)
         .clipShape(RoundedRectangle(cornerRadius: 16))
         .overlay(
             RoundedRectangle(cornerRadius: 16)
